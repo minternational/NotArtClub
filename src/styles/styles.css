@@ -10,11 +10,12 @@ body {
 }
 
 a {
-  color: gray;
-  border: 10px solid white;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  margin: 0 1.5rem;
+  border: 5px solid white;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0 1.3rem;
+  color: black;
 }
 
 div#navbarNav {
@@ -24,9 +25,16 @@ div#navbarNav {
 a:hover {
   background-color: black;
   color: white;
-  transition: 500ms;
-  border: 10px solid black;
-  border-radius: 15px;
+  transition: 750ms;
+  border: 5px solid black;
+  border-radius: 1px;
+}
+
+a.dropdown-item:hover {
+  background-color: black;
+  padding: 0;
+  margin: auto;
+  color: white;
 }
 
 div#Navbar {
@@ -55,13 +63,13 @@ hr {
 /* NAVIGATION */
 
 .navbar {
-  max-width: 1920px;
+  max-width: 80%;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
 #nav-logo {
-  padding: 1%;
+  height: 50%;
 }
 
 /* HEADER */

@@ -25,7 +25,7 @@ const About = () => {
       <br />
       <button className="btn btn-dark">
         Discover our Vision & Mission{" "}
-        <i class="fas fa-long-arrow-alt-right"></i>
+        <i className="fas fa-long-arrow-alt-right"></i>
       </button>
     </section>
   );
