@@ -3,13 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div class="col-4">
+      <div className="col-4">
         <p>Subscribe to our newsletter:</p>
         <input></input>
         <br />
-        <button class="btn btn-dark">Subscribe</button>
+        <button className="btn btn-dark">Subscribe</button>
       </div>
-      <div class="col-4">
+      <div className="col-4">
         <h5>Site map</h5>
         <ul>
           <li>News</li>
@@ -21,7 +21,7 @@ const Footer = () => {
           <li>Contact</li>
         </ul>
       </div>
-      <div class="col-4">
+      <div className="col-4">
         <h5>Legal</h5>
         <ul>
           <li>Terms & Conditions</li>
