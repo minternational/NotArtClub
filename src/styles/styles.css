@@ -25,7 +25,7 @@ div#navbarNav {
 a.nav-link:hover {
   background-color: black;
   color: white;
-  transition: 750ms;
+  transition: 500ms;
   border: 5px solid black;
   border-radius: 1px;
 }
@@ -41,7 +41,7 @@ a.dropdown-item {
 a.dropdown-item:hover {
   background-color: black;
   color: white;
-  transition: 750ms;
+  transition: 500ms;
   border: 5px solid black;
   border-radius: 1px;
 }
@@ -159,6 +159,12 @@ hr {
   border-radius: 15px;
 }
 
+.about-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 500ms;
+}
+
 #about-paragraph {
   text-align: left;
   padding-right: 1rem;
@@ -263,6 +269,12 @@ hr#news-hr {
   width: 175px;
 }
 
+.subscribe-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 500ms;
+}
+
 label {
   font-size: 1.3rem;
 }
@@ -285,5 +297,10 @@ li {
 
 .sm-icons {
   color: black;
-  padding: 0 0.5rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.sm-icons:hover {
+  color: red;
+  opacity: 75%;
 }
