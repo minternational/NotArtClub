@@ -6,10 +6,10 @@ const Navigation = () => {
   return (
     <section id="navigation">
       {/*       <div className="container fluid"> */}
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg fixed-top">
         <img id="nav-logo" src={logo} alt="not-art-club-logo"></img>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler navbar-light"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -21,7 +21,7 @@ const Navigation = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="localhost:3000">
+              <a className="nav-link" href="#news">
                 News <span className="sr-only">(current)</span>
               </a>
             </li>
@@ -29,7 +29,7 @@ const Navigation = () => {
               <a
                 className="nav-link dropdown-toggle"
                 id="navbarDropdownMenuLink"
-                href="localhost:3000"
+                href="#projects"
                 data-toggle="dropdown"
                 //aria-haspopup="true"
                 aria-expanded="false">
@@ -38,23 +38,23 @@ const Navigation = () => {
               <div
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink">
-                <a className="dropdown-item" href="localhost:3000">
+                <a className="dropdown-item" href="#100dollarbill">
                   100 Dollar Bill
                 </a>
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="localhost:3000">
+              <a className="nav-link" href="#art">
                 The Art
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="localhost:3000">
+              <a className="nav-link" href="#artists">
                 The Artists
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="localhost:3000">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>

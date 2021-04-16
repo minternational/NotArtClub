@@ -9,7 +9,7 @@ body {
   color: black;
 }
 
-a {
+.nav-link {
   border: 5px solid white;
   border-radius: 20px;
   font-size: 1.3rem;
@@ -22,7 +22,7 @@ div#navbarNav {
   justify-content: flex-end;
 }
 
-a:hover {
+a.nav-link:hover {
   background-color: black;
   color: white;
   transition: 750ms;
@@ -30,15 +30,28 @@ a:hover {
   border-radius: 1px;
 }
 
+a.dropdown-item {
+  border: 5px solid white;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: black;
+}
+
 a.dropdown-item:hover {
   background-color: black;
-  padding: 0;
-  margin: auto;
   color: white;
+  transition: 750ms;
+  border: 5px solid black;
+  border-radius: 1px;
 }
 
 div#Navbar {
   text-align: end;
+}
+
+.col-sm-12.p-2 {
+  padding: 0;
 }
 
 h1 {
@@ -46,11 +59,39 @@ h1 {
   /*"Orelega One", cursive;*/
   font-size: 4.4rem;
   text-align: left;
+  margin-top: -0.5rem;
 }
 
 h2 {
   font-size: 3.1rem;
   font-family: futura-pt, sans-serif;
+}
+
+h3 {
+  padding-bottom: 4rem;
+  font-family: gastromond, sans-serif;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 30;
+  text-align: end;
+  font-family: gastromond, sans-serif;
+  text-decoration: underline;
+}
+
+h5:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h6 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 0;
 }
 
 hr {
@@ -63,13 +104,17 @@ hr {
 /* NAVIGATION */
 
 .navbar {
-  max-width: 80%;
   padding: 0;
   margin: auto;
+  max-width: 1920px;
+  background-color: #fff;
+  /* filter: drop-shadow(0 0 0.2rem crimson); */
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
 }
 
 #nav-logo {
   height: 50%;
+  padding-left: 5%;
 }
 
 /* HEADER */
@@ -80,7 +125,7 @@ hr {
 }
 
 #header-text {
-  width: 55%;
+  width: 60%;
   text-align: center;
   margin: auto;
   padding-bottom: 15rem;
@@ -108,14 +153,137 @@ hr {
   margin: auto;
 }
 
-.btn {
+.about-btn {
   background-color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 15px;
+}
+
+#about-paragraph {
+  text-align: left;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  line-height: 5rem;
 }
 
 /* MANIFESTO */
 
 #manifesto {
-  padding-top: 10rem;
+  padding: 10rem 0;
+}
+
+#manifesto-row {
+  width: 82%;
+  text-align: justify;
+}
+
+#foo {
+  line-height: 5rem;
+}
+
+.manifesto-content {
+  padding: 0 2.5%;
+}
+
+/* NEWS */
+
+#news {
+  padding: 0 0 10rem;
+  width: 82%;
+  margin: auto;
+  text-align: left;
+}
+
+#news-img {
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+hr#news-hr {
+  border-top: 2px solid rgba(0, 0, 0, 1);
+  width: 97%;
+  margin: 0;
+  padding: 1rem;
+}
+
+.news-paragraph {
+  text-align: justify;
+  padding: 0 2%;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* HIGHLIGHTS */
+
+#highlights {
+  padding: 0 0 10rem;
+  width: 82%;
+  margin: auto;
+  text-align: left;
+}
+
+.highlight-content {
+  text-align: justify;
+  padding: 0 3% 0 0;
+}
+
+/* FOOTER */
+
+#footer {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 5rem;
+}
+
+#footer-logo {
+  margin-bottom: 2rem;
+}
+
+#footer-row {
+  width: 100%;
+}
+
+.input {
+  width: 60%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+}
+
+.subscribe-btn {
+  background-color: black;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 1px;
+  width: 175px;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.footer-anchor {
+  color: black;
+}
+
+.footer-anchor:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: 75ms;
+}
+
+.sm-icons {
+  color: black;
+  padding: 0 0.5rem;
 }

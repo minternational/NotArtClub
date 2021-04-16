@@ -9,8 +9,9 @@ const About = () => {
         <div className="row">
           <div id="about-col" className="col-lg-6">
             <h1>
-              <p>100 artists from around the world, as a collective ;</p>
-              <p>100 stories</p>
+              <p id="about-paragraph">
+                100 artists from around the world, as a collective ; 100 stories
+              </p>
             </h1>
           </div>
           <div className="col-lg-6">
@@ -24,7 +25,7 @@ const About = () => {
       <br />
       <br />
       <br />
-      <button className="btn btn-dark">
+      <button className="btn btn-dark about-btn">
         Discover our Vision & Mission{" "}
         <i className="fas fa-long-arrow-alt-right"></i>
       </button>
