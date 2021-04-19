@@ -21,6 +21,64 @@ div#navbarNav {
   justify-content: flex-end;
 }
 
+/* a.nav-link:hover {
+  background: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    orange,
+    red
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+  transition: 500ms;
+  /*   background-color: #fff;
+  color: #000; */
+/*   background-color: black;
+  color: white;
+  transition: 500ms;
+  border: 5px solid black;
+  border-radius: 1px;
+} */
+
+/* a.dropdown-item {
+  border: 5px solid white;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: black;
+} */
+
+/* a.dropdown-item:hover {
+  background: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    orange,
+    red
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+  transition: 500ms;
+  /*   background-color: black;
+  color: white;
+  transition: 500ms;
+  border: 5px solid black;
+  border-radius: 1px;
+} */
+
+/* div#Navbar {
+  text-align: end;
+} */
+
 .col-sm-12.p-2 {
   padding: 0;
 }
@@ -51,6 +109,25 @@ h5 {
   text-decoration: underline;
 }
 
+/* h5:hover {
+  background: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    orange,
+    red
+  );
+  background-size: 35%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+  transition: 500ms;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
 h6 {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
@@ -75,6 +152,7 @@ hr {
   margin: auto;
   max-width: 1920px;
   background-color: #fff;
+  /* filter: drop-shadow(0 0 0.2rem crimson); */
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
 }
 
@@ -167,6 +245,11 @@ a.dropdown-item:hover {
   width: 82%;
   text-align: justify;
 }
+
+/* #foo {
+  line-height: 5rem;
+} */
+
 .manifesto-content {
   padding: 0 2.5%;
 }
@@ -236,6 +319,35 @@ a.dropdown-item:hover {
   text-align: center;
 }
 
+/* .subscribe-btn {
+  background-color: black;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 1px;
+  width: 175px;
+} */
+
+/* .subscribe-btn:hover {
+  background: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    orange,
+    red
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+  transition: 500ms;
+  /*   background-color: #fff;
+  color: #000;
+  transition: 500ms;
+} */
+
 label {
   font-size: 1.3rem;
 }
@@ -260,3 +372,20 @@ li {
   color: black;
   padding: 0.5rem 0.5rem;
 }
+
+/* .sm-icons:hover {
+  background: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    orange,
+    red
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+  transition: 500ms;
+} */

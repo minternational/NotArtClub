@@ -24,12 +24,12 @@ const Manifesto = () => {
             </p>
             <br />
             <br />
-            <h5>
+            <h5 id="read-more">
               Read more <i className="fas fa-long-arrow-alt-right"></i>
             </h5>
           </div>
           <div className="col-lg-4 manifesto-content">
-            <h1 id="foo">“Coming together now”</h1>
+            <h1>“Coming together now”</h1>
           </div>
         </div>
       </div>

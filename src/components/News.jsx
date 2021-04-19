@@ -1,5 +1,4 @@
 import React from "react";
-import picture from "../images/placeholder_recentnewssection.jpg";
 import "../styles/styles.css";
 
 const News = () => {
@@ -60,7 +59,10 @@ const News = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-4 news-img">
-            <img id="news-img" src={picture} alt="news-img"></img>
+            <img
+              id="news-img"
+              src="https://picsum.photos/300/200"
+              alt="news-img"></img>
           </div>
           <div className="col-lg-4">
             <p className="news-paragraph">

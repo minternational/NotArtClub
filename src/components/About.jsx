@@ -1,5 +1,4 @@
 import React from "react";
-import placeholder from "../images/placeholder_about.JPG";
 import "../styles/styles.css";
 
 const About = () => {
@@ -17,7 +16,7 @@ const About = () => {
           <div className="col-lg-6">
             <img
               id="placeholder_about"
-              src={placeholder}
+              src="https://picsum.photos/600/300"
               alt="placeholder"></img>
           </div>
         </div>

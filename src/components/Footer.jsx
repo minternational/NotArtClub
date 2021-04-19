@@ -23,7 +23,7 @@ const Footer = () => {
             </button>
           </div>
           <div className="col-lg-3 col-sm-12">
-            <h6>Site map</h6>
+            <h6 id="site-map">Site map</h6>
             <br />
             <a className="footer-anchor" href="localhost:3000">
               News
@@ -74,19 +74,34 @@ const Footer = () => {
             <div className="col-12 p-2">
               <h6>Social Media</h6>
               <br />
-              <a href="localhost:3000">
-                <i className="fas fa-envelope fa-2x sm-icons"></i>
+              <a
+                href="mailto:info@notartclub.com"
+                target="_blank"
+                rel="noreferrer">
+                <i className="far fa-envelope fa-2x sm-icons"></i>
               </a>
-              <a href="localhost:3000">
+              <a
+                href="https://twitter.com/NotArtClub"
+                target="_blank"
+                rel="noreferrer">
                 <i className="fab fa-twitter fa-2x sm-icons"></i>
               </a>
-              <a href="localhost:3000">
+              <a
+                href="https://www.facebook.com/groups/889324268527278/"
+                target="_blank"
+                rel="noreferrer">
                 <i className="fab fa-facebook-f fa-2x sm-icons"></i>
               </a>
-              <a href="localhost:3000">
+              <a
+                href="https://www.instagram.com/not.art.club/"
+                target="_blank"
+                rel="noreferrer">
                 <i className="fab fa-instagram fa-2x sm-icons"></i>
               </a>
-              <a href="localhost:3000">
+              <a
+                href="https://www.reddit.com/r/NotArtClub/"
+                target="_blank"
+                rel="noreferrer">
                 <i className="fab fa-reddit fa-2x sm-icons"></i>
               </a>
             </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import highlightImage from "../images/placeholder_artisthighlightsection.jpg";
 import "../styles/styles.css";
 
 const Highlights = () => {
@@ -27,7 +26,7 @@ const Highlights = () => {
             </h5>
           </div>
           <div className="col-lg-6 news-img">
-            <img src={highlightImage} alt="highlight"></img>
+            <img src="https://picsum.photos/700/450" alt="highlight"></img>
           </div>
         </div>
       </div>
