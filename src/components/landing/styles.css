@@ -130,7 +130,7 @@ hr {
 .subscribe-btn:hover,
 .sm-icons:hover,
 h5:hover,
-.nav-link:hover,
+a.nav-link:hover,
 a.dropdown-item:hover {
   background: linear-gradient(
     to right,
@@ -148,10 +148,6 @@ a.dropdown-item:hover {
   transition: 500ms;
   text-decoration: none;
   cursor: pointer;
-}
-
-#react-link:hover {
-  text-decoration: none;
 }
 
 #about-paragraph {

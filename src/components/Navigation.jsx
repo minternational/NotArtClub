@@ -1,13 +1,16 @@
 import React from "react";
 import logo from "../images/logo_footer.png";
 import "../styles/styles.css";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <section id="navigation">
       {/*       <div className="container fluid"> */}
       <nav className="navbar navbar-expand-lg fixed-top">
-        <img id="nav-logo" src={logo} alt="not-art-club-logo"></img>
+        <Link to="/">
+          <img id="nav-logo" src={logo} alt="not-art-club-logo"></img>
+        </Link>
         <button
           className="navbar-toggler navbar-light"
           type="button"
@@ -43,11 +46,9 @@ const Navigation = () => {
                 </a>
               </div>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#art">
-                The Art
-              </a>
-            </li>
+            <Link id="react-link" to="/art">
+              <li className="nav-item nav-link">The Art</li>
+            </Link>
             <li className="nav-item">
               <a className="nav-link" href="#artists">
                 The Artists
