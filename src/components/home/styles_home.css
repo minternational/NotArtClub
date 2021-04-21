@@ -129,9 +129,8 @@ hr {
 .about-btn:hover,
 .subscribe-btn:hover,
 .sm-icons:hover,
-.contact-icons:hover,
 h5:hover,
-.nav-link:hover,
+a.nav-link:hover,
 a.dropdown-item:hover {
   background: linear-gradient(
     to right,
@@ -149,10 +148,6 @@ a.dropdown-item:hover {
   transition: 500ms;
   text-decoration: none;
   cursor: pointer;
-}
-
-.react-link:hover {
-  text-decoration: none;
 }
 
 #about-paragraph {
@@ -264,12 +259,4 @@ li {
 .sm-icons {
   color: black;
   padding: 0.5rem 0.5rem;
-}
-
-/* CONTACT */
-
-.contact-icons {
-  padding: 2rem 10rem;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.5);
 }

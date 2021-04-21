@@ -5,10 +5,10 @@ import "./styles_art.css";
 
 const Art = () => {
   return (
-    <div>
+    <section id="art">
       <Content />
       <Dollarbill />
-    </div>
+    </section>
   );
 };
 
