@@ -5,7 +5,7 @@ import Manifesto from "./landing/Manifesto";
 import RecentNews from "./landing/RecentNews";
 import Highlights from "./landing/Highlights";
 
-const Home = () => {
+const Main = () => {
   return (
     <section>
       <Subtitle />
@@ -17,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Main;

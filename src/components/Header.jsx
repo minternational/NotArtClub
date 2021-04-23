@@ -4,7 +4,14 @@ import "../styles/general-styles.css";
 import "./main-styles.css";
 
 const Header = () => {
-  return <img id="header-img" src={logo} alt="not-art-club-logo"></img>;
+  return (
+    <section id="header">
+      <div className="column">
+        <img id="header-img" src={logo} alt="not-art-club-logo"></img>
+        <hr />
+      </div>
+    </section>
+  );
 };
 
 export default Header;

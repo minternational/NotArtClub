@@ -2,7 +2,7 @@ import React from "react";
 import Subtitle from "./Subtitle";
 import About from "./About";
 import Manifesto from "./Manifesto";
-import News from "./News";
+import Recentnews from "./Recentnews";
 import Highlights from "./Highlights";
 import "../../styles/general-styles.css";
 import "./home-styles.css";
@@ -13,7 +13,7 @@ const Home = () => {
       <Subtitle />
       <About />
       <Manifesto />
-      <News />
+      <Recentnews />
       <Highlights />
     </section>
   );

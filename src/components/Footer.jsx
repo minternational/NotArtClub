@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../images/logo_footer.png";
+import { Link } from "react-router-dom";
 import "../styles/general-styles.css";
 import "./main-styles.css";
 
@@ -8,100 +9,95 @@ const Footer = () => {
     <section id="footer">
       <div className="container-fluid">
         <div id="footer-row" className="row">
-          <div className="col-sm-6">
+          <div className="col-lg-6 col-sm-12 column">
             <img id="logo" src={logo} alt="not-art-club-logo"></img>
             <br />
-            <label>Subscribe to our newsletter:</label>
-            <br />
+            <h6>Subscribe to our newsletter:</h6>
             <input
               type="input"
               className="input"
-              placeholder="Type in your E-Mail"></input>
+              placeholder="Your E-Mail adress"></input>
+            <br />
+            <small>
+              We handle your data secure and will never sell it to anyone.
+            </small>
             <br />
             <br />
             <button className="btn btn-lg">Subscribe</button>
           </div>
-          <div className="col-lg-3 col-sm-12">
+          <div className="col-lg-3 col-sm-12 column">
             <h6 id="site-map">Site map</h6>
             <br />
-            <a className="footer-anchor" href="localhost:3000">
+            <Link className="footer-link" to="/news">
               News
-            </a>
+            </Link>
             <br />
-            <a className="footer-anchor" href="localhost:3000">
+            <Link className="footer-link" to="/dollarbill">
               The Project
-            </a>
+            </Link>
             <br />
-            <a className="footer-anchor" href="localhost:3000">
-              Blah Link
-            </a>
+            <Link className="footer-link" to="/art">
+              The Art
+            </Link>
             <br />
-            <a className="footer-anchor" href="localhost:3000">
-              Blahblah Link
-            </a>
-            <br />
-            <a className="footer-anchor" href="localhost:3000">
-              Some Other Link
-            </a>
-            <br />
-            <a className="footer-anchor" href="localhost:3000">
+            <Link className="footer-link" to="/artists">
               The Artists
-            </a>
+            </Link>
             <br />
-            <a className="footer-anchor" href="localhost:3000">
+            <Link className="footer-link" to="/contact">
               Contact
-            </a>
+            </Link>
           </div>
-          <div className="d-flex flex-column col-lg-3 col-sm-12">
-            <div className="col-lg-12 col-12 p-2">
+          <div className="col-lg-3 col-sm-12 column">
+            <div className="col-lg-12 col-sm-12 column">
               <h6>Legal</h6>
               <br />
-              <a className="footer-anchor" href="localhost:3000">
+              <Link className="footer-link" to="/">
                 Terms & Conditions
-              </a>
+              </Link>
               <br />
-              <a className="footer-anchor" href="localhost:3000">
+              <Link className="footer-link" to="/">
                 Privacy Policy
-              </a>
+              </Link>
               <br />
-              <a className="footer-anchor" href="localhost:3000">
+              <Link className="footer-link" to="/">
                 Other
-              </a>
+              </Link>
               <br />
               <br />
             </div>
-            <div className="col-12 p-2">
+            <div className="col-lg-12 col-sm-12 column">
               <h6>Social Media</h6>
               <br />
               <a
                 href="mailto:info@notartclub.com"
                 target="_blank"
                 rel="noopener noreferrer">
-                <i className="far fa-envelope fa-2x sm-icons"></i>
+                <i className="far fa-envelope fa-2x footer-icons"></i>
               </a>
               <a
                 href="https://twitter.com/NotArtClub"
                 target="_blank"
                 rel="noopener noreferrer">
-                <i className="fab fa-twitter fa-2x sm-icons"></i>
+                <i className="fab fa-twitter fa-2x footer-icons"></i>
               </a>
               <a
                 href="https://www.facebook.com/groups/889324268527278/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <i className="fab fa-facebook-f fa-2x sm-icons"></i>
+                <i className="fab fa-facebook-f fa-2x footer-icons"></i>
               </a>
               <a
                 href="https://www.instagram.com/not.art.club/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <i className="fab fa-instagram fa-2x sm-icons"></i>
+                <i className="fab fa-instagram fa-2x footer-icons"></i>
               </a>
               <a
                 href="https://www.reddit.com/r/NotArtClub/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <i className="fab fa-reddit fa-2x sm-icons"></i>
+                <i className="fab fa-reddit fa-2x footer-icons"></i>
               </a>
             </div>
           </div>
