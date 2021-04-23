@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles_home.css";
 
 const Subtitle = () => {
   return (

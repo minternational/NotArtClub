@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles_home.css";
 
 const About = () => {
   return (
@@ -24,7 +23,7 @@ const About = () => {
       <br />
       <br />
       <br />
-      <button className="btn btn-dark about-btn">
+      <button className="btn btn-lg">
         Discover our Vision & Mission{" "}
         <i className="fas fa-long-arrow-alt-right"></i>
       </button>

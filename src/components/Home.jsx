@@ -2,7 +2,7 @@ import React from "react";
 import Subtitle from "./landing/Subtitle";
 import About from "./landing/About";
 import Manifesto from "./landing/Manifesto";
-import News from "./landing/News";
+import RecentNews from "./landing/RecentNews";
 import Highlights from "./landing/Highlights";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <Subtitle />
       <About />
       <Manifesto />
-      <News />
+      <RecentNews />
       <Highlights />
     </section>
   );

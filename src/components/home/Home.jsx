@@ -4,7 +4,8 @@ import About from "./About";
 import Manifesto from "./Manifesto";
 import News from "./News";
 import Highlights from "./Highlights";
-import "./styles_home.css";
+import "../../styles/general-styles.css";
+import "./home-styles.css";
 
 const Home = () => {
   return (

@@ -1,7 +1,8 @@
 import React from "react";
 import Content from "./Content";
 import Dollarbill from "./Dollarbill";
-import "./styles_art.css";
+import "../../styles/general-styles.css";
+import "./art-styles.css";
 
 const Art = () => {
   return (

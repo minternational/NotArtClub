@@ -1,15 +1,16 @@
 import React from "react";
 import logo from "../images/logo_footer.png";
-import "../styles/styles.css";
 import { Link } from "react-router-dom";
+import "../styles/general-styles.css";
+import "./main-styles.css";
 
 const Navigation = () => {
   return (
     <section id="navigation">
-      {/*       <div className="container fluid"> */}
+      {/*       <div className="container-fluid"> */}
       <nav className="navbar navbar-expand-lg fixed-top">
-        <Link to="/">
-          <img id="nav-logo" src={logo} alt="not-art-club-logo"></img>
+        <Link className="react-link" to="/">
+          <img id="logo" src={logo} alt="not-art-club-logo"></img>
         </Link>
         <button
           className="navbar-toggler navbar-light"
@@ -37,13 +38,13 @@ const Navigation = () => {
                 The Project
               </a>
               <Link className="react-link" to="/dollarbill">
-              <div
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink">
-                <a className="dropdown-item" href="_">
-                  100 Dollar Bill
-                </a>
-              </div>
+                <div
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <div className="dropdown-item" href="_">
+                    100 Dollar Bill
+                  </div>
+                </div>
               </Link>
             </li>
             <Link className="react-link" to="/art">

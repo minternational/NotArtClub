@@ -1,7 +1,9 @@
 import React from "react";
+import "../../styles/general-styles.css";
+import "./contact-styles.css";
 
 const Contact = () => {
-  return ( 
+  return (
     <section id="contact">
       <div className="container-fluid">
         <div className="row">
@@ -17,7 +19,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
+  );
 };
 
 export default Contact;
