@@ -18,6 +18,9 @@ body {
   text-align: center;
   margin: auto;
   color: black;
+  animation: 1s;
+  animation-duration: 1.5s;
+  animation-name: page;
 }
 
 h1 {
@@ -43,6 +46,12 @@ h5 {
   text-align: end;
   font-family: gastromond, sans-serif;
   text-decoration: underline;
+  color: #000;
+}
+
+.d-block {
+  width: 1920px;
+  height: 598px;
 }
 
 h6 {
@@ -84,4 +93,13 @@ h5:hover,
   transition: 500ms;
   text-decoration: none;
   cursor: pointer;
+}
+
+@keyframes page {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
 }

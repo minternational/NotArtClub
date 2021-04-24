@@ -23,11 +23,10 @@ hr {
 /* SUBTITLE */
 
 #subtitle-text {
-  padding: 3rem 0;
+  padding: 5rem 0 10rem;
   text-align: center;
   width: 60%;
   margin: auto;
-  padding-bottom: 15rem;
 }
 
 /* ABOUT */

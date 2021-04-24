@@ -16,6 +16,14 @@ img#logo {
   text-transform: uppercase;
 }
 
+li.indicator {
+  border: 1.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 1rem;
+}
+
 .nav-link {
   margin: 0 2rem;
   color: black;

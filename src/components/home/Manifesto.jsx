@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../styles/general-styles.css";
+import "./home-styles.css";
 
 const Manifesto = () => {
   return (
@@ -26,7 +28,7 @@ const Manifesto = () => {
             <br />
             <br />
             <Link className="react-link" to="/manifesto">
-              <h5 id="read-more">
+              <h5>
                 Read more <i className="fas fa-long-arrow-alt-right"></i>
               </h5>
             </Link>
