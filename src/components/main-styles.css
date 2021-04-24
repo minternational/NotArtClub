@@ -7,13 +7,13 @@
 
 /* NAVIGATION */
 
-img#logo {
-  padding: 0.5rem 0 0.5rem 2rem;
-}
-
 #navigation {
   font-size: 1.3rem;
   text-transform: uppercase;
+}
+
+#navi-logo {
+  padding: 0.5rem 0 0.5rem 2rem;
 }
 
 li.indicator {
@@ -48,6 +48,10 @@ li.indicator {
 
 /* HEADER */
 
+#header {
+  padding: 3rem 0 6rem 0;
+}
+
 #header-img {
   width: 100%;
   padding-bottom: 4%;
@@ -57,8 +61,7 @@ li.indicator {
 
 #footer {
   text-align: left;
-  padding-bottom: 3rem;
-  padding-top: 5rem;
+  padding: 3rem 0 6rem 0;
   width: 80%;
   margin: auto;
 }

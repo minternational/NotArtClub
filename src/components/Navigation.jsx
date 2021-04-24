@@ -10,7 +10,7 @@ const Navigation = () => {
       {/*       <div className="container-fluid"> */}
       <nav className="navbar navbar-expand-lg fixed-top">
         <Link className="react-link" to="/">
-          <img id="logo" src={logo} alt="not-art-club-logo"></img>
+          <img id="navi-logo" src={logo} alt="not-art-club-logo"></img>
         </Link>
         <button
           className="navbar-toggler navbar-light"

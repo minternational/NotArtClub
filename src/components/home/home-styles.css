@@ -32,64 +32,46 @@ hr {
 /* ABOUT */
 
 #about {
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
+  margin: auto;
 }
 
 #placeholder_about {
   width: 100%;
 }
 
-#about {
-  padding: 3rem 0;
-  /* width: 82%; */
-  margin: auto;
-}
-
 #about-paragraph {
   text-align: left;
-  /* padding: 0 1rem; */
   line-height: 5rem;
 }
 
 /* MANIFESTO */
 
 #manifesto {
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
 }
 
 #manifesto-row {
-  /*   width: 82%; */
   text-align: justify;
-}
-.manifesto-content {
-  /*   padding: 0 2.5%; */
 }
 
 /* RECENT NEWS */
 
 #recent-news {
-  padding: 3rem 0;
-  /* width: 82%; */
+  padding: 3rem 0 6rem 0;
   margin: auto;
   text-align: left;
 }
 
-/* #recent-news-img {
-  margin: 0;
-  text-align: left;
-  /* width: 100%;
-} */
-
 #recent-news-hr {
   border-top: 2px solid rgba(0, 0, 0, 1);
-  width: 90%;
+  width: 100%;
   margin: auto;
-  /* padding: 3rem 0; */
+  padding: 1rem 0;
 }
 
 .recent-news-paragraph {
   text-align: justify;
-  /* padding: 0 2%; */
   font-size: 0.9rem;
   margin: 0;
 }
@@ -97,13 +79,11 @@ hr {
 /* HIGHLIGHTS */
 
 #highlights {
-  padding: 3rem 0;
-  /*   width: 82%; */
+  padding: 2rem 0 6rem 0;
   margin: auto;
   text-align: left;
 }
 
 .highlight-content {
   text-align: justify;
-  /* padding: 0 3% 0 0; */
 }
