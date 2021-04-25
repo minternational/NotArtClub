@@ -61,7 +61,7 @@ const Recentnews = () => {
           <div className="col-lg-4 col-sm-12 recent-news-img column">
             <img
               id="recent-news-img"
-              src="https://picsum.photos/300/200"
+              src="https://picsum.photos/475/275"
               alt="recent-news-img"></img>
           </div>
           <div className="col-lg-4 col-sm-12 column">
