@@ -1,5 +1,7 @@
 import React from "react";
 import dollarbill from "./images/dollar_placeholder.jpg";
+import "../../styles/general-styles.css";
+import "./art-styles.css";
 
 const Dollarbill = () => {
   return (

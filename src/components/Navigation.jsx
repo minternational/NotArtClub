@@ -37,7 +37,7 @@ const Navigation = () => {
                 aria-expanded="false">
                 The Project
               </a>
-              <Link className="react-link" to="/dollarbill">
+              <Link className="react-link" to="/art">
                 <div
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink">

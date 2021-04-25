@@ -4,7 +4,7 @@ import "../styles/general-styles.css";
 import "./main-styles.css";
 import header2 from "../images/placeholder_carousel2.jpg";
 import header3 from "../images/placeholder_carousel3.jpg";
-import header4 from "../images/placeholder_carousel4.png";
+import header4 from "../images/placeholder_carousel4.jpg";
 
 const Header = () => {
   return (

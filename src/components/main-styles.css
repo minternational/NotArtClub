@@ -10,18 +10,11 @@
 #navigation {
   font-size: 1.3rem;
   text-transform: uppercase;
+  outline: none;
 }
 
 #navi-logo {
   padding: 0.5rem 0 0.5rem 2rem;
-}
-
-li.indicator {
-  border: 1.5px solid rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-  margin: 0 1rem;
 }
 
 .nav-link {
@@ -31,7 +24,8 @@ li.indicator {
 
 .dropdown-item {
   font-size: 1.3rem;
-  margin: 0 1rem;
+
+  text-align: center;
 }
 
 #navbarNav {
@@ -53,8 +47,21 @@ li.indicator {
 }
 
 #header-img {
-  width: 100%;
+  width: 1920px;
+  height: auto;
   padding-bottom: 4%;
+}
+
+li.indicator {
+  border: 1.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 1rem;
+}
+
+.carousel {
+  height: 100%;
 }
 
 /* FOOTER */

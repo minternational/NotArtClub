@@ -1,11 +1,15 @@
 import React from "react";
 import "../../styles/general-styles.css";
 import "./news-styles.css";
+import Recentnews from "../home/Recentnews";
 
 const News = () => {
   return (
     <section id="news">
-      <h1>News</h1>
+      <Recentnews />
+      <Recentnews />
+      <Recentnews />
+      <Recentnews />
     </section>
   );
 };

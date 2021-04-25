@@ -1,4 +1,6 @@
 import React from "react";
+import "../../styles/general-styles.css";
+import "./art-styles.css";
 
 const Content = () => {
   return (
@@ -7,14 +9,6 @@ const Content = () => {
         <div className="row">
           <div className="col-lg-4">
             <h1>“The Last Bell”</h1>
-            <div className="row inner-class-row">
-              <div className="col-lg-1">
-                <i className="fas fa-long-arrow-alt-down fa-4x"></i>
-              </div>
-              <div className="col-lg-5">
-                <h4 id="scroll-down">Scroll down to explore piece</h4>
-              </div>
-            </div>
           </div>
 
           <div className="col-lg-4">
@@ -80,6 +74,19 @@ const Content = () => {
               upon before being symbolically incinerated.
             </p>
           </div>
+        </div>
+        <div className="row scroll-row">
+          {/* <div className="col-lg-1">
+            <i className="fas fa-long-arrow-alt-down fa-4x"></i>
+          </div> */}
+          <div className="col-lg-2 scroll-down">
+            <h4 id="scroll-down">Scroll down to explore piece</h4>
+            <i className="fas fa-long-arrow-alt-down fa-4x"></i>
+          </div>
+          {/*           <div className="col-lg-1">
+            
+          </div> */}
+          <div className="col-lg-10"></div>
         </div>
       </div>
     </section>
