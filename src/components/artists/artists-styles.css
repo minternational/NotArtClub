@@ -6,17 +6,26 @@
 }
 
 .special-row {
-  text-align: left;
+  text-align: center;
   padding: 0;
 }
 
-.foo {
-  margin: 0;
-  padding: 1rem 0;
+/* .artists-row {
+  display: flex;
+
+  flex-flow: column wrap;
+  align-content: flex-start;
+} */
+
+.parent-row {
+  display: flex;
+  flex-direction: row-reverse;
+
+  justify-content: space-around;
 }
 
 .artist-avatar {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   border: 1.5px solid black;
   border-radius: 50%;
   height: 200px;
