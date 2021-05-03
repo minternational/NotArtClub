@@ -1,33 +1,18 @@
 #artists {
   width: 80%;
-  text-align: justify;
   margin: auto;
   padding: 3rem 0 6rem 0;
 }
 
-.special-row {
-  text-align: center;
-  padding: 0;
-}
-
-/* .artists-row {
-  display: flex;
-
-  flex-flow: column wrap;
-  align-content: flex-start;
-} */
-
 .parent-row {
   display: flex;
-  flex-direction: row-reverse;
-
   justify-content: space-around;
 }
 
 .artist-avatar {
-  margin-bottom: 1rem;
+  margin: 1rem auto 1rem;
   border: 1.5px solid black;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }

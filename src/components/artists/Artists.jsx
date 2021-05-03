@@ -5,119 +5,117 @@ import "./artists-styles.css";
 import firebase from "./firebase";
 
 const Artists = () => {
+  const imgStyle = {
+    width: "150px",
+    border: "1.5px solid lightgray",
+    borderRadius: "50%",
+    margin: "1rem auto 1rem",
+  };
+
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const db = firebase.firestore();
       const data = await db.collection("artists").get();
-      setArtists(data.docs.map(doc => doc.data()));
+      console.log(data);
+      setArtists(
+        data.docs.map(doc => {
+          console.log(doc.id);
+          return { ...doc.data(), id: doc.id };
+        })
+      );
     };
     fetchData();
   }, []);
 
   return (
     <section id="artists">
-      <ul className="col-lg-12 parent-row">
-        {artists.map(artist => (
-          <div className="row artists-row">
-            <div className="col-lg-12 special-row">
-              {console.log(artist.avatar)}
-              <img
-                className="artist-avatar"
-                src={artist.avatar}
-                alt="artist avatar"></img>
-              <p>{artist.name}</p>
-              <p className="foo">
-                <i>{artist.title}</i>
-              </p>
+      {artists.map(artist => (
+        <React.Fragment key={artist.id}>
+          {/* <div className="d-flex flex-row" key={artist.id}> */}
+          <div
+            className="col-lg-2"
+            style={{
+              minWidth: "250px",
+              display: "inline-block",
+            }}>
+            <img
+              style={imgStyle}
+              src={artist.avatar}
+              alt="avatar"
+              type="button"
+              onClick={console.log("I am clicked!")}
+              data-toggle="modal"
+              data-target={`#${artist.id}`}></img>
+            <p>{artist.name}</p>
+            <p>{artist.title}</p>
+          </div>
+          <div
+            className="modal fade"
+            id={artist.id}
+            tabIndex="-1"
+            role="dialog"
+            aria-labelledby="artistModalTitle"
+            aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalLongTitle">
+                    {artist.name}
+                  </h5>
+                  <button
+                    type="button"
+                    className="close"
+                    data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <img style={imgStyle} src={artist.avatar} alt="avatar"></img>
+                <div className="modal-body">
+                  <div>{artist.bio}</div>
+                  <br />
+                  <a
+                    href={"mailto:" + artist.mail}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i className="far fa-envelope fa-2x footer-icons"></i>
+                  </a>
+                  <a
+                    href={artist.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i className="fab fa-twitter fa-2x footer-icons"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/groups/889324268527278/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i className="fab fa-facebook-f fa-2x footer-icons"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/not.art.club/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i className="fab fa-instagram fa-2x footer-icons"></i>
+                  </a>
+                  <a
+                    href="https://www.reddit.com/r/NotArtClub/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i className="fab fa-reddit fa-2x footer-icons"></i>
+                  </a>
+                </div>
+
+                <div className="modal-footer"></div>
+              </div>
             </div>
           </div>
-        ))}
-      </ul>
+        </React.Fragment>
+      ))}
     </section>
   );
 };
-/* <div>
-      <div>
-        {artists.map(artist => (
-          <img src={artist.avatar}>{console.log({ artist })}</img>
-        ))}
-      </div>
-      <ul>
-        {artists.map(artist => (
-          <div>
-            <li key={artist.name}>{artist.name}</li>
-            <li key={artist.title}>{artist.title}</li>
-            <li key={artist.web}>{artist.web}</li>
-            <li key={artist.social}>{artist.social}</li>
-            {/*             <li key={artist.social.twitter}>{artist.social.twitter}</li>
-            <li key={artist.social.facebook}>{artist.social.facebook}</li>
-            <li key={artist.social.instagram}>{artist.social.instagram}</li>
-            <li key={artist.social.reddit}>{artist.social.reddit}</li>
-            <li key={artist.social.discord}>{artist.social.discord}</li>
-            <li key={artist.bio}>{artist.bio}</li>
-          </div>
-        ))}
-      </ul>
-    </div>
-
-<section id="artists">
-  {artists.map(artist => (
-    <div className="row artists-row">
-      <div className="col-lg-4 special-row">
-        {console.log(artist.avatar)}
-        <img
-          className="artist-avatar"
-          src={artist.avatar}
-          alt="artist avatar"></img>
-        <h2>{artist.name}</h2>
-        <h3 className="foo">
-          <i>{artist.title}</i>
-        </h3>
-        <h4>{artist.web}</h4>
-        <div className="col-lg-12 col-sm-12 column">
-          <br />
-          <a
-            href="mailto:info@notartclub.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i className="far fa-envelope fa-2x footer-icons"></i>
-          </a>
-          <a
-            href="https://twitter.com/NotArtClub"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i className="fab fa-twitter fa-2x footer-icons"></i>
-          </a>
-          <a
-            href="https://www.facebook.com/groups/889324268527278/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i className="fab fa-facebook-f fa-2x footer-icons"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/not.art.club/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i className="fab fa-instagram fa-2x footer-icons"></i>
-          </a>
-          <a
-            href="https://www.reddit.com/r/NotArtClub/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i className="fab fa-reddit fa-2x footer-icons"></i>
-          </a>
-        </div>
-      </div>
-      <div className="col-lg-8">
-        <h3>
-          <i>Biography</i>
-        </h3>
-        <p>{artist.bio}</p>
-      </div>
-    </div>
-  ))}
-</section>; */
 
 export default Artists;
