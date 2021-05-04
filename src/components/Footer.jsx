@@ -11,85 +11,82 @@ const Footer = () => {
         <div id="footer-row" className="row">
           <div className="col-lg-6 col-sm-12 column">
             {/* <img id="logo" src={logo} alt="not-art-club-logo"></img> */}
-            <h6>Social Media</h6>
-            <br />
-            <a
-              href="mailto:info@notartclub.com"
-              target="_blank"
-              rel="noopener noreferrer">
-              <i className="far fa-envelope fa-3x footer-icons"></i>
-            </a>
-            <a
-              href="https://twitter.com/NotArtClub"
-              target="_blank"
-              rel="noopener noreferrer">
-              <i className="fab fa-twitter fa-3x footer-icons"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/groups/889324268527278/"
-              target="_blank"
-              rel="noopener noreferrer">
-              <i className="fab fa-facebook-f fa-3x footer-icons"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/not.art.club/"
-              target="_blank"
-              rel="noopener noreferrer">
-              <i className="fab fa-instagram fa-3x footer-icons"></i>
-            </a>
-            <a
-              href="https://www.reddit.com/r/NotArtClub/"
-              target="_blank"
-              rel="noopener noreferrer">
-              <i className="fab fa-reddit fa-3x footer-icons"></i>
-            </a>
-            <a
-              href="https://discord.gg/cXvjc2qJyj"
-              target="_blank"
-              rel="noopener noreferrer">
-              <i className="fab fa-discord fa-3x footer-icons"></i>
-            </a>
-            {/* <br />
-            <h6>Subscribe to our newsletter:</h6>
-            <input
-              type="input"
-              className="input"
-              placeholder="Your E-Mail adress"></input>
-            <br />
-            <small>
-              We handle your data secure and will never sell it to anyone.
-            </small>
-            <br />
-            <br />
-            <button className="btn btn-lg">Subscribe</button> */}
+
+            {/* FOOTER */}
+            <div id="mc_embed_signup">
+              <form
+                action="https://notartclub.us1.list-manage.com/subscribe/post?u=601bd69f69ec73ad240ec9435&amp;id=b5d78cef6f"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                className="validate"
+                target="_blank"
+                noValidate>
+                <div id="mc_embed_signup_scroll">
+                  <h6 className="subscribe">Subscribe to our newsletter</h6>
+                  <div className="mc-field-group">
+                    <input
+                      type="email"
+                      defaultValue=""
+                      name="EMAIL"
+                      className="required email input"
+                      placeholder="Your email (required)"
+                      id="mce-EMAIL"></input>
+                  </div>
+                  <div className="mc-field-group">
+                    <br />
+                    <input
+                      type="text"
+                      defaultValue=""
+                      name="FNAME"
+                      className="input"
+                      placeholder="Your name"
+                      id="mce-FNAME"></input>
+                  </div>
+                  <div id="mce-responses" className="clear">
+                    <div
+                      className="response"
+                      id="mce-error-response"
+                      style={{ display: "none" }}></div>
+                    <div
+                      className="response"
+                      id="mce-success-response"
+                      style={{ display: "none" }}></div>
+                  </div>
+                  <small>
+                    We handle your data secure and will never
+                    <br />
+                    sell it to anyone.
+                  </small>
+                  <br />
+                  <br />
+                  <div className="clear">
+                    <input
+                      type="submit"
+                      defaultValue="Subscribe"
+                      name="subscribe"
+                      id="mc-embedded-subscribe"
+                      className="button btn btn-sm"></input>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
           <div className="col-lg-3 col-sm-12 column">
             <h6 id="site-map">Site map</h6>
-            <br />
             <Link className="footer-link" to="/news">
-              News
+              <li>News</li>
             </Link>
-            <br />
-            <Link className="footer-link" to="/dollarbill">
-              The Project
-            </Link>
-            <br />
             <Link className="footer-link" to="/art">
-              The Art
+              <li>The Project</li>
             </Link>
-            <br />
             <Link className="footer-link" to="/artists">
-              The Artists
-            </Link>
-            <br />
-            <Link className="footer-link" to="/contact">
-              Contact
+              <li>The Artists</li>
             </Link>
           </div>
           <div className="col-lg-3 col-sm-12 column">
             <div className="col-lg-12 col-sm-12 column">
               <h6>Legal</h6>
-              <br />
               <Link className="footer-link" to="/">
                 Terms & Conditions
               </Link>
@@ -104,7 +101,45 @@ const Footer = () => {
               <br />
               <br />
             </div>
-            <div className="col-lg-12 col-sm-12 column"></div>
+            <div className="col-lg-12 col-sm-12 column">
+              <h6>Social Media</h6>
+              <a
+                href="mailto:info@notartclub.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i className="far fa-envelope fa-2x footer-icons"></i>
+              </a>
+              <a
+                href="https://twitter.com/NotArtClub"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i className="fab fa-twitter fa-2x footer-icons"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/groups/889324268527278/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i className="fab fa-facebook-f fa-2x footer-icons"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/not.art.club/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i className="fab fa-instagram fa-2x footer-icons"></i>
+              </a>
+              <a
+                href="https://www.reddit.com/r/NotArtClub/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i className="fab fa-reddit fa-2x footer-icons"></i>
+              </a>
+              <a
+                href="https://discord.gg/cXvjc2qJyj"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i className="fab fa-discord fa-2x footer-icons"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>

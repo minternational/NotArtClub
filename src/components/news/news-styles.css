@@ -1,0 +1,9 @@
+#news-section {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+#fetched-news {
+  text-align: left;
+}

@@ -24,6 +24,9 @@ const Navigation = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
+            <Link className="react-link" to="/news">
+              <li className="nav-item nav-link">News</li>
+            </Link>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"

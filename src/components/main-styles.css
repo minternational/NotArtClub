@@ -77,11 +77,20 @@ li.indicator {
   padding: 0 0 1rem 0;
 }
 
+#mc_embed_signup_scroll {
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe {
+  margin-bottom: 1.5rem;
+}
+
 .input {
-  width: 50%;
-  height: 3rem;
+  width: 250px;
+  height: 2rem;
   border: 1px solid black;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   outline: none;
   text-align: center;
 }
