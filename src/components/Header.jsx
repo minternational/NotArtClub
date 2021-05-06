@@ -15,7 +15,7 @@ const Header = () => {
         data-interval="5000"
         data-pause="hover"
         data-ride="carousel">
-        <ol className="carousel-indicators">
+        {/* <ol className="carousel-indicators">
           <li
             data-target="#carouselIndicators"
             data-slide-to="0"
@@ -32,7 +32,7 @@ const Header = () => {
             className="indicator"
             data-target="#carouselIndicators"
             data-slide-to="3"></li>
-        </ol>
+        </ol> */}
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img

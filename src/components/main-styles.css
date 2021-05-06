@@ -52,16 +52,12 @@
   height: auto;
 }
 
-li.indicator {
+/* li.indicator {
   border: 1.5px solid rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 0.75rem;
   height: 0.75rem;
   margin: 0 1rem;
-}
-
-/* .carousel {
-  height: 100%;
 } */
 
 /* FOOTER */
