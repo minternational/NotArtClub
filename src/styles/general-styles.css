@@ -43,25 +43,8 @@ h3 {
 h5 {
   font-size: 1.25rem;
   font-weight: 300;
-  text-align: end;
+  text-align: center;
   font-family: gastromond, sans-serif;
-  text-decoration: underline;
-  background: linear-gradient(
-    to right,
-    violet,
-    indigo,
-    blue,
-    green,
-    orange,
-    red
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate 10s linear infinite;
-  transition: 500ms;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .d-block {
@@ -104,6 +87,7 @@ h5:hover,
   );
   background-size: 100%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate 10s linear infinite;
   transition: 500ms;

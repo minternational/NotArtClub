@@ -36,53 +36,30 @@ const Header = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              className="d-block w-100"
+              className="d-block img-fluid"
               src={header1}
               alt="First slide"></img>
           </div>
           <div className="carousel-item">
             <img
-              className="d-block w-100"
+              className="d-block img-fluid"
               src={header2}
               alt="Second slide"></img>
           </div>
           <div className="carousel-item">
             <img
-              className="d-block w-100"
+              className="d-block img-fluid"
               src={header3}
               alt="Third slide"></img>
           </div>
           <div className="carousel-item">
             <img
-              className="d-block w-100"
+              className="d-block img-fluid"
               src={header4}
               alt="Third slide"></img>
           </div>
         </div>
       </div>
-      {/* <div className="column">
-        <div
-          id="carouselExampleSlidesOnly"
-          class="carousel slide"
-          data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src={header1} alt="First slide" />
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src={header2} alt="First slide" />
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src={header3} alt="Second slide" />
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src={header4} alt="Third slide" />
-            </div>
-          </div>
-        </div>
-        {/* <img id="header-img" src={logo} alt="not-art-club-logo"></img>
-        <hr />
-      </div> */}
     </section>
   );
 };

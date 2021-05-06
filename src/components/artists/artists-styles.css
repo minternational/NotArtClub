@@ -4,9 +4,9 @@
   padding: 3rem 0 6rem 0;
 }
 
-.parent-row {
-  display: flex;
-  justify-content: space-around;
+.header {
+  text-align: center;
+  margin-bottom: 8rem;
 }
 
 .artist-avatar {
@@ -15,4 +15,17 @@
   border-radius: 50%;
   height: 150px;
   width: 150px;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* keep size of each card - no resizing*/
+  justify-content: center;
+}
+
+.card {
+  width: 236px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+  margin: 2rem 2rem;
 }
