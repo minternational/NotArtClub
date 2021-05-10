@@ -4,17 +4,13 @@
   padding: 3rem 0 6rem 0;
 }
 
-.header {
+.title {
   text-align: center;
   margin-bottom: 8rem;
 }
 
-.artist-avatar {
-  margin: 1rem auto 1rem;
-  border: 1.5px solid black;
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
+.modalToggle {
+  cursor: pointer;
 }
 
 .container-fluid {
@@ -25,7 +21,26 @@
 }
 
 .card {
-  width: 236px;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
-  margin: 2rem 2rem;
+  margin: 2rem;
+}
+
+#modalAvatar {
+  margin: 1rem auto 1rem;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.modal-footer {
+  margin: auto;
+}
+
+.footer-icons {
+  color: black;
+  padding: 0.5rem;
+}
+
+.modal-body {
+  text-align: justify;
 }

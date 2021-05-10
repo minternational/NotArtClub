@@ -103,3 +103,9 @@ h5:hover,
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+}

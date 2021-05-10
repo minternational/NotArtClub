@@ -27,11 +27,6 @@ const Manifesto = () => {
             </p>
             <br />
             <br />
-            <Link className="react-link" to="/manifesto">
-              <h5>
-                Read more <i className="fas fa-long-arrow-alt-right"></i>
-              </h5>
-            </Link>
           </div>
           <div className="col-lg-4 col-sm-12 manifesto-content column">
             <h1>“Coming together now”</h1>

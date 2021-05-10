@@ -42,7 +42,6 @@ hr {
 
 #about-paragraph {
   text-align: left;
-  line-height: 5rem;
 }
 
 /* MANIFESTO */
@@ -86,4 +85,11 @@ hr {
 
 .highlight-content {
   text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+  #home,
+  #subtitle-text {
+    width: 90%;
+  }
 }

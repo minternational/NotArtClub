@@ -75,19 +75,6 @@ const Content = () => {
             </p>
           </div>
         </div>
-        <div className="row scroll-row">
-          {/* <div className="col-lg-1">
-            <i className="fas fa-long-arrow-alt-down fa-4x"></i>
-          </div> */}
-          <div className="col-lg-2 scroll-down">
-            <h4 id="scroll-down">Scroll down to explore piece</h4>
-            <i className="fas fa-long-arrow-alt-down fa-4x"></i>
-          </div>
-          {/*           <div className="col-lg-1">
-            
-          </div> */}
-          <div className="col-lg-10"></div>
-        </div>
       </div>
     </section>
   );

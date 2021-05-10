@@ -5,12 +5,12 @@ import "./artists-styles.css";
 import firebase from "./firebase";
 
 const Artists = () => {
-  const imgStyle = {
+  /*   const imgStyle = {
     width: "150px",
     border: "1.5px solid lightgray",
     borderRadius: "50%",
     margin: "1rem auto 1rem",
-  };
+  }; */
 
   const [artists, setArtists] = useState([]);
 
@@ -18,10 +18,10 @@ const Artists = () => {
     const fetchData = async () => {
       const db = firebase.firestore();
       const data = await db.collection("artists").get();
-      console.log(data);
+      /* console.log(data); */
       setArtists(
         data.docs.map(doc => {
-          console.log(doc.id);
+          /* console.log(doc.id); */
           return { ...doc.data(), id: doc.id };
         })
       );
@@ -31,22 +31,24 @@ const Artists = () => {
 
   return (
     <section id="artists">
-      <h1 className="header">Artists</h1>
+      <h1 className="title">Artists</h1>
       <div className="container-fluid">
         {artists.map(artist => (
           <React.Fragment key={artist.id}>
-            <div className="card">
-              <img
-                className="card-img-top"
-                src={artist.avatar}
-                alt="avatar"
-                type="button"
-                onClick={console.log("I am clicked!")}
+            <div className="card" style={{ width: "18rem" }}>
+              <a
+                href="_"
+                className="modalToggle"
                 data-toggle="modal"
-                data-target={`#${artist.id}`}></img>
+                data-target={`#${artist.id}`}>
+                <img
+                  src={artist.avatar}
+                  className="card-img-top"
+                  alt="artist avatar"></img>
+              </a>
               <div className="card-body">
                 <h5 className="card-title">{artist.name}</h5>
-                <p className="card-text text-secondary">{artist.title}</p>
+                <p className="card-text">{artist.title}</p>
               </div>
             </div>
             <div
@@ -72,10 +74,18 @@ const Artists = () => {
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <img style={imgStyle} src={artist.avatar} alt="avatar"></img>
+                  <img
+                    id="modalAvatar"
+                    src={artist.avatar}
+                    alt="artist avatar"></img>
                   <div className="modal-body">
-                    <div>{artist.bio}</div>
+                    <div dangerouslySetInnerHTML={{ __html: artist.bio }}>
+                      {}
+                    </div>
                     <br />
+                  </div>
+
+                  <div className="modal-footer">
                     <a
                       href={"mailto:" + artist.mail}
                       target="_blank"
@@ -107,8 +117,6 @@ const Artists = () => {
                       <i className="fab fa-reddit fa-2x footer-icons"></i>
                     </a>
                   </div>
-
-                  <div className="modal-footer"></div>
                 </div>
               </div>
             </div>

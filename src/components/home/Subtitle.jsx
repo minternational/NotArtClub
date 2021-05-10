@@ -1,4 +1,6 @@
 import React from "react";
+import "../../styles/general-styles.css";
+import "./home-styles.css";
 
 const Subtitle = () => {
   return (

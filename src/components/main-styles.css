@@ -24,8 +24,11 @@
 
 .dropdown-item {
   font-size: 1.3rem;
-
   text-align: center;
+}
+
+.dropdown-toggle {
+  outline: none;
 }
 
 #navbarNav {

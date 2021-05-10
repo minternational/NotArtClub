@@ -31,7 +31,7 @@ const Navigation = () => {
               <a
                 className="nav-link dropdown-toggle"
                 id="navbarDropdownMenuLink"
-                href="#projects"
+                href="_"
                 data-toggle="dropdown"
                 //aria-haspopup="true"
                 aria-expanded="false">
