@@ -21,7 +21,10 @@ const Footer = () => {
             target="_blank"
             noValidate>
             <div id="mc_embed_signup_scroll">
-              <h6 className="subscribe">Subscribe to our newsletter</h6>
+              <h6 className="subscribe">
+                Sign up to be FIRST in line for updates about our genesis NFT
+                project!
+              </h6>
               <div className="mc-field-group">
                 <input
                   type="email"

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import firebase from "../artists/firebase";
+import firebase from "../firebase";
 import "./news-styles.css";
-import newsImage from "../../images/news_img.jpg";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -36,7 +35,7 @@ const News = () => {
                 <div className="col-lg-12">
                   <img
                     id="recent-news-img"
-                    src={newsImage}
+                    src={entry.image}
                     alt="recent-news-img"></img>
 
                   <p

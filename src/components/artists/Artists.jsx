@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../styles/general-styles.css";
 import "./artists-styles.css";
 /* import avatar from "../../images/artistavatar.jpg"; */
-import firebase from "./firebase";
+import firebase from "../firebase";
 
 const Artists = () => {
   /*   const imgStyle = {
@@ -79,9 +79,7 @@ const Artists = () => {
                     src={artist.avatar}
                     alt="artist avatar"></img>
                   <div className="modal-body">
-                    <div dangerouslySetInnerHTML={{ __html: artist.bio }}>
-                      {}
-                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: artist.bio }}></div>
                     <br />
                   </div>
 
@@ -99,22 +97,22 @@ const Artists = () => {
                       <i className="fab fa-twitter fa-2x footer-icons"></i>
                     </a>
                     <a
-                      href="https://www.facebook.com/groups/889324268527278/"
+                      href={artist.fb}
                       target="_blank"
                       rel="noopener noreferrer">
                       <i className="fab fa-facebook-f fa-2x footer-icons"></i>
                     </a>
                     <a
-                      href="https://www.instagram.com/not.art.club/"
+                      href={artist.insta}
                       target="_blank"
                       rel="noopener noreferrer">
                       <i className="fab fa-instagram fa-2x footer-icons"></i>
                     </a>
                     <a
-                      href="https://www.reddit.com/r/NotArtClub/"
+                      href={artist.web}
                       target="_blank"
                       rel="noopener noreferrer">
-                      <i className="fab fa-reddit fa-2x footer-icons"></i>
+                      <i className="fas fa-globe fa-2x footer-icons"></i>
                     </a>
                   </div>
                 </div>

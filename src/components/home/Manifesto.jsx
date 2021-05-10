@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../styles/general-styles.css";
 import "./home-styles.css";
 
 const Manifesto = () => {
   return (
     <section id="manifesto">
-      <h2>Our Manifesto</h2>
-      <h3>Mission Statement of NAC</h3>
+      <h1 className="manifesto-title">Mission Statement of NAC</h1>
       <div id="manifesto-row" className="container-fluid">
         <div className="row">
           <div className="col-lg-4 col-sm-12 manifesto-content column">

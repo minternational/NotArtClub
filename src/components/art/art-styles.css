@@ -15,3 +15,9 @@
 .scroll-down {
   display: flex;
 }
+
+@media screen and (max-width: 900px) {
+  #art {
+    width: 90%;
+  }
+}
