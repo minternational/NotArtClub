@@ -27,13 +27,13 @@ const Content = () => {
               For centuries, the sale of art and great intellectual
               property-at-large has been kept behind a gate, guarded by fine art
               galleries and socialites. Hindering our story, culture and history
-              from telling it's truth.
+              from telling its truth.
               <br />
               <br />
               Art, as subjective as it may be, predates all other asset trade.
               Though the international art market has had many barriers to
               entry. Until now. Undiscovered artists are realizing the shift
-              within a new renaissance of global economy.Artists across the
+              within a new renaissance of global economy. Artists across the
               world are now discovering ways to create opportunity in the middle
               of chaos.
               <br />
