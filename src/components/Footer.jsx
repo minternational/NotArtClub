@@ -145,7 +145,6 @@ const Footer = () => {
           </Link>
           <li
             className="footer-link"
-            type="button"
             data-toggle="modal"
             data-target=".bd-example-modal-lg">
             Privacy Policy
@@ -159,6 +158,13 @@ const Footer = () => {
             aria-hidden="true">
             <div className="modal-dialog modal-lg">
               <div className="modal-content">
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
                 <PrivacyPolicy />
               </div>
             </div>

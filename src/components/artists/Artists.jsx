@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/general-styles.css";
 import "./artists-styles.css";
-/* import avatar from "../../images/artistavatar.jpg"; */
 import firebase from "../firebase";
 
 const Artists = () => {
-  /*   const imgStyle = {
-    width: "150px",
-    border: "1.5px solid lightgray",
-    borderRadius: "50%",
-    margin: "1rem auto 1rem",
-  }; */
-
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
