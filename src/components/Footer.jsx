@@ -133,7 +133,7 @@ const Footer = () => {
         </div>
         {/* SITE MAP & LEGAL */}
         <div className="footer-row col-lg-4 col-md-6 col-sm-12">
-          <h6 id="site-map">Site map & Legal</h6>
+          <h6 id="site-map">Site Map & Legal</h6>
           <Link className="footer-link" to="/news">
             <li>News</li>
           </Link>
@@ -166,7 +166,8 @@ const Footer = () => {
         </div>
       </div>
       <small>
-        Copyright by Angie Mathot (Design) & Christopher Kühn (Code) {getYear}
+        Copyright by Not Art Club ™ (Angie Mathot (Design) & Christopher Kühn
+        (Code)) © {getYear}
       </small>
     </section>
   );
