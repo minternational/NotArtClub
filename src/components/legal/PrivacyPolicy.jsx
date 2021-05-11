@@ -268,9 +268,21 @@ const TermsAndConditions = () => {
       <p>
         Lisa Devers
         <br />
-        <a href="mailto:info@notart.club">info@notart.club</a>
+        <a
+          className="footer-link"
+          href="mailto:info@notart.club"
+          rel="noopener noreferrer">
+          info@notart.club
+        </a>
         <br />
-        https://notart.club <br />
+        <a
+          className="footer-link"
+          href="https://www.notart.club"
+          target="_blank"
+          rel="noopener noreferrer">
+          www.notart.club
+        </a>{" "}
+        <br />
         <br />
         1A Water-Ma-Trout
         <br />
