@@ -3,15 +3,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/general-styles.css";
 import "./main-styles.css";
+import PrivacyPolicy from "./legal/PrivacyPolicy";
 
 const Footer = () => {
+  const getYear = new Date().getFullYear();
+
   return (
     <section id="footer">
       <div className="row">
         {/* SUBSCRIPTION */}
         <div
           id="mc_embed_signup"
-          className="footer-row col-lg-3 col-md-6 col-sm-12 col-md-6 col-sm-12">
+          className="footer-row col-lg-4 col-md-6 col-sm-12">
           <form
             action="https://notartclub.us1.list-manage.com/subscribe/post?u=601bd69f69ec73ad240ec9435&amp;id=b5d78cef6f"
             method="post"
@@ -70,21 +73,8 @@ const Footer = () => {
             </div>
           </form>
         </div>
-        {/* SITE MAP */}
-        <div className="footer-row col-lg-3 col-md-6 col-sm-12">
-          <h6 id="site-map">Site map</h6>
-          <Link className="footer-link" to="/news">
-            <li>News</li>
-          </Link>
-          <Link className="footer-link" to="/art">
-            <li>The Project</li>
-          </Link>
-          <Link className="footer-link" to="/artists">
-            <li>The Artists</li>
-          </Link>
-        </div>
         {/* SOCIAL MEDIA */}
-        <div className="footer-row col-lg-3 col-md-6 col-sm-12">
+        <div className="footer-row col-lg-4 col-md-6 col-sm-12">
           <h6>Social Media</h6>
           <a
             href="mailto:info@notartclub.com"
@@ -141,21 +131,43 @@ const Footer = () => {
             </li>
           </a>
         </div>
-        {/* LEGAL */}
-        <div className="footer-row col-lg-3 col-md-6 col-sm-12">
-          <h6>Legal</h6>
-          <Link className="footer-link" to="/">
-            <li>Terms & Conditions</li>
+        {/* SITE MAP & LEGAL */}
+        <div className="footer-row col-lg-4 col-md-6 col-sm-12">
+          <h6 id="site-map">Site map & Legal</h6>
+          <Link className="footer-link" to="/news">
+            <li>News</li>
           </Link>
-          <Link className="footer-link" to="/">
-            <li>Privacy Policy</li>
+          <Link className="footer-link" to="/art">
+            <li>The Project</li>
           </Link>
-          <Link className="footer-link" to="/">
-            <li>Other</li>
+          <Link className="footer-link" to="/artists">
+            <li>The Artists</li>
           </Link>
+          <li
+            className="footer-link"
+            type="button"
+            data-toggle="modal"
+            data-target=".bd-example-modal-lg">
+            Privacy Policy
+          </li>
+
+          <div
+            className="modal fade bd-example-modal-lg"
+            tabIndex="-1"
+            role="dialog"
+            aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div className="modal-dialog modal-lg">
+              <div className="modal-content">
+                <PrivacyPolicy />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      {/* <small>Copyright by Angie Mathot & Christopher Kühn 2021</small> */}
+      <small>
+        Copyright by Angie Mathot (Design) & Christopher Kühn (Code) {getYear}
+      </small>
     </section>
   );
 };
