@@ -90,7 +90,7 @@ h5:hover,
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate 10s linear infinite;
-  transition: 500ms;
+  transition: 250ms;
   text-decoration: none;
   cursor: pointer;
 }
