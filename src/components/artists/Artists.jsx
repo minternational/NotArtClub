@@ -37,14 +37,15 @@ const Artists = () => {
                   src={artist.avatar}
                   className="card-img-top"
                   alt="artist avatar"></img>
+
+                <div className="card-body">
+                  <h5 className="card-title">{artist.name}</h5>
+                  <p className="card-text">{artist.title}</p>
+                </div>
               </a>
-              <div className="card-body">
-                <h5 className="card-title">{artist.name}</h5>
-                <p className="card-text">{artist.title}</p>
-              </div>
             </div>
             <div
-              className="modal fade"
+              className="modal fade modal-card"
               id={artist.id}
               tabIndex="-1"
               role="dialog"
