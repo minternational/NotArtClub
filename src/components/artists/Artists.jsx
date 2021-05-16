@@ -45,7 +45,7 @@ const Artists = () => {
               </a>
             </div>
             <div
-              className="modal fade modal-card"
+              className="modal fade"
               id={artist.id}
               tabIndex="-1"
               role="dialog"
