@@ -73,7 +73,6 @@ h6 {
 .react-link:hover,
 .btn:hover,
 .footer-icons:hover,
-h5:hover,
 .nav-link:hover,
 .dropdown-item:hover {
   background: linear-gradient(
@@ -93,6 +92,7 @@ h5:hover,
   transition: 250ms;
   text-decoration: none;
   cursor: pointer;
+  font-weight: normal;
 }
 
 @keyframes page {
