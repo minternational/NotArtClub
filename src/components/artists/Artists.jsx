@@ -77,36 +77,53 @@ const Artists = () => {
                   </div>
 
                   <div className="modal-footer">
-                    <a
+                    {artist.mail !== "" && (
+                      <a
+                        href={"mailto:" + artist.mail}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i className="far fa-envelope fa-2x footer-icons"></i>
+                      </a>
+                    )}
+
+                    {/*                     <a
                       href={"mailto:" + artist.mail}
                       target="_blank"
                       rel="noopener noreferrer">
                       <i className="far fa-envelope fa-2x footer-icons"></i>
-                    </a>
-                    <a
-                      href={artist.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <i className="fab fa-twitter fa-2x footer-icons"></i>
-                    </a>
-                    <a
-                      href={artist.fb}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <i className="fab fa-facebook-f fa-2x footer-icons"></i>
-                    </a>
-                    <a
-                      href={artist.insta}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <i className="fab fa-instagram fa-2x footer-icons"></i>
-                    </a>
-                    <a
-                      href={artist.web}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <i className="fas fa-globe fa-2x footer-icons"></i>
-                    </a>
+                    </a> */}
+                    {artist.twitter !== "" && (
+                      <a
+                        href={artist.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i className="fab fa-twitter fa-2x footer-icons"></i>
+                      </a>
+                    )}
+                    {artist.fb !== "" && (
+                      <a
+                        href={artist.fb}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i className="fab fa-facebook-f fa-2x footer-icons"></i>
+                      </a>
+                    )}
+                    {artist.insta !== "" && (
+                      <a
+                        href={artist.insta}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i className="fab fa-instagram fa-2x footer-icons"></i>
+                      </a>
+                    )}
+                    {artist.web !== "" && (
+                      <a
+                        href={artist.web}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i className="fab fa-safari fa-2x footer-icons"></i>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="footer-row col-lg-4 col-md-6 col-sm-12">
           <h6>Social Media</h6>
           <a
-            href="mailto:info@notartclub.com"
+            href="mailto:info@notart.club"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link">
@@ -92,6 +92,15 @@ const Footer = () => {
             className="footer-link">
             <li>
               <i className="fab fa-twitter footer-icons"></i> Twitter
+            </li>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCfpUG7CI4SX2lUJ1vcr59mQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link">
+            <li>
+              <i className="fab fa-youtube footer-icons"></i> YouTube
             </li>
           </a>
           <a
