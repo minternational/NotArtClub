@@ -85,13 +85,6 @@ const Artists = () => {
                         <i className="far fa-envelope fa-2x footer-icons"></i>
                       </a>
                     )}
-
-                    {/*                     <a
-                      href={"mailto:" + artist.mail}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <i className="far fa-envelope fa-2x footer-icons"></i>
-                    </a> */}
                     {artist.twitter !== "" && (
                       <a
                         href={artist.twitter}

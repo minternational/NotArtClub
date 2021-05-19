@@ -18,8 +18,9 @@ body {
   text-align: center;
   margin: auto;
   color: black;
-  animation: 1s;
+  animation: 1.5s;
   animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
   animation-name: page;
 }
 
@@ -61,17 +62,7 @@ h6 {
   margin: 0 0 1rem 0;
 }
 
-.btn {
-  background-color: black;
-  font-size: 1.5rem;
-  border: 1.5px solid #fff;
-  border-radius: 15px;
-  color: #fff;
-  transition: 500ms;
-}
-
 .react-link:hover,
-.btn:hover,
 .footer-icons:hover,
 .nav-link:hover,
 .dropdown-item:hover {
@@ -97,7 +88,8 @@ h6 {
 
 @keyframes page {
   from {
-    opacity: 0.25;
+    opacity: 0;
+    background-color: #000;
   }
   to {
     opacity: 1;
