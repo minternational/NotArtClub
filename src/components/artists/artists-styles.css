@@ -22,6 +22,7 @@
 
 .card {
   margin: 2rem;
+  outline: none;
 }
 
 #modalAvatar {

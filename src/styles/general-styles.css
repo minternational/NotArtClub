@@ -20,7 +20,7 @@ body {
   color: black;
   animation: 1.5s;
   animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
   animation-name: page;
 }
 
@@ -62,8 +62,17 @@ h6 {
   margin: 0 0 1rem 0;
 }
 
+.btn {
+  background-color: black;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  color: #fff;
+  transition: 500ms;
+}
+
 .react-link:hover,
 .footer-icons:hover,
+.btn:hover,
 .nav-link:hover,
 .dropdown-item:hover {
   background: linear-gradient(

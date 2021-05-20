@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="footer-row col-lg-4 col-md-6 col-sm-12">
           <h6>Social Media</h6>
           <a
-            href="mailto:info@notart.club"
+            href="mailto:lil@notart.club"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link">

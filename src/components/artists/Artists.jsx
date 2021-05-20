@@ -38,7 +38,7 @@ const Artists = () => {
                   className="card-img-top"
                   alt="artist avatar"></img>
 
-                <div className="card-body">
+                <div id="cardBody" className="card-body">
                   <h5 className="card-title">{artist.name}</h5>
                   <p className="card-text">{artist.title}</p>
                 </div>

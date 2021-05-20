@@ -42,8 +42,6 @@ const Dollarbill = () => {
         </div>
         <div className="col-lg-6">
           <img
-            onMouseOver={scaleUp}
-            onMouseOut={scaleNormal}
             id="pieceScale"
             className="piece"
             src={piece02}
@@ -53,8 +51,6 @@ const Dollarbill = () => {
       <div className="row">
         <div className="col-lg-6">
           <img
-            onMouseOver={scaleUp}
-            onMouseOut={scaleNormal}
             id="pieceScale"
             className="piece"
             src={piece03}
@@ -62,8 +58,6 @@ const Dollarbill = () => {
         </div>
         <div className="col-lg-6">
           <img
-            onMouseOver={scaleUp}
-            onMouseOut={scaleNormal}
             id="pieceScale"
             className="piece"
             src={piece04}
