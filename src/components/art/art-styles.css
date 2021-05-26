@@ -8,16 +8,47 @@
   margin: 3rem 0 6rem 0;
 }
 
-#dollarbill {
+#video {
   margin: 3rem 0 6rem 0;
+}
+
+#dollarbill {
+  margin-top: 3rem;
 }
 
 .scroll-down {
   display: flex;
 }
 
+#pieceRow {
+  margin: auto;
+  align-items: stretch;
+  display: none;
+}
+
+.buttonReveal {
+  margin-bottom: 6rem;
+}
+
 .piece {
   width: 100%;
+  margin-bottom: -6px;
+}
+
+#pieceStyle {
+  width: 140px;
+}
+
+.visible {
+  margin: auto;
+  align-items: stretch;
+  display: contents;
+}
+
+.piece:hover {
+  transform: scale(1.5);
+  transition: 750ms ease-out;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 900px) {

@@ -2,6 +2,7 @@ import React from "react";
 import Countdown from "../countdown/Countdown";
 import Content from "./Content";
 import Video from "./Video";
+import Dollarbill from "./Dollarbill";
 import "../../styles/general-styles.css";
 import "./art-styles.css";
 
@@ -14,6 +15,7 @@ const Art = () => {
       />
       <Content />
       <Video />
+      <Dollarbill />
     </section>
   );
 };
