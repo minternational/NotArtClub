@@ -9,6 +9,7 @@
   BUTTONS
   COLUMNS
   HOVER STYLES
+  MODAL FIX (MOVEMENT)
 */
 
 /* COMPONENTS */
@@ -93,6 +94,11 @@ h6 {
   text-decoration: none;
   cursor: pointer;
   font-weight: normal;
+}
+
+.modal-open {
+  padding: 0 !important;
+  overflow-y: scroll;
 }
 
 @keyframes page {

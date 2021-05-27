@@ -33,7 +33,7 @@ const Dollarbill = () => {
     getBodyElement.style.backgroundColor = "rgba(255, 255, 255, 1)";
   };
 
-  const handleClick = e => {
+  /*   const handleClick = e => {
     const attribute = document.getElementById("pieceRow").getAttribute("id");
     if (attribute === "pieceRow") {
       document.getElementById("pieceRow").setAttribute("id", "visible");
@@ -43,23 +43,23 @@ const Dollarbill = () => {
       element.style.transition = "1s";
       return false;
     }
-  };
+  }; */
 
   return (
     <section id="dollarbill">
       {/*       <button id="button" className="btn buttonReveal" onClick={handleClick}>
         Discover our final piece in full glance - Click here
       </button> */}
-      <div id="pieceRow" className="container-fluid">
+      <div id="pieceRow" className="row">
         {dollarbill.map(piece => (
           <React.Fragment>
             <div key={piece.id} id="pieceStyle">
-              {piece.high_res.endsWith(".jpg") && (
+              {piece.low_res.endsWith(".jpg") && (
                 <a
                   href="_"
                   className="modalToggle"
                   data-toggle="modal"
-                  data-target={`#${piece.id}`}>
+                  data-target={`.${piece.id}-modal-lg`}>
                   <img
                     onMouseOver={scaleUp}
                     onMouseOut={scaleNormal}
@@ -69,54 +69,61 @@ const Dollarbill = () => {
                     alt="piece"></img>
                 </a>
               )}
-              {piece.high_res.endsWith(".mp4") && (
-                /*<img
-                  id="pieceImage"
-                  className="piece"
-                  src={piece.low_res}
-                  alt="piece"></img> */
-                <video
-                  id="pieceVideo"
-                  className="piece"
-                  loop
-                  muted
-                  autoPlay
-                  onMouseOver={scaleUp}
-                  onMouseOut={scaleNormal}>
-                  <source src={piece.low_res} type="video/mp4"></source>
-                </video>
-              )}
-            </div>
-            <div
-              className="modal fade"
-              id={piece.id}
-              tabIndex="-1"
-              role="dialog"
-              aria-labelledby="pieceModalTitle"
-              aria-hidden="true">
-              <div
-                className="modal-dialog modal-dialog-centered"
-                role="document">
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="modalLongTitle">
-                      {piece.id}
-                    </h5>
-                    <button
-                      type="button"
-                      className="close"
-                      data-dismiss="modal"
-                      aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
+              {piece.gif && (
+                <a
+                  href="_"
+                  className="modalToggle"
+                  data-toggle="modal"
+                  data-target={`.${piece.id}-modal-lg`}>
                   <img
-                    id="modalPiece"
-                    src={piece.high_res}
-                    alt="piece fullsize"></img>
-                  <div className="modal-body">
-                    <div dangerouslySetInnerHTML={{ __html: piece.bio }}></div>
-                    <br />
+                    onMouseOver={scaleUp}
+                    onMouseOut={scaleNormal}
+                    className="piece"
+                    id="pieceImage"
+                    src={piece.gif}
+                    alt="piece"></img>
+                </a>
+              )}
+              <div
+                key={piece.id}
+                className={`modal fade ${piece.id}-modal-lg`}
+                tabIndex="-1"
+                role="dialog"
+                aria-labelledby="largeModalLabel"
+                aria-hidden="true">
+                <div className="modal-dialog modal-lg">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <h5 className="modal-title" id="modalLongTitle">
+                        {piece.id}
+                      </h5>
+                      <button
+                        type="button"
+                        className="close"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    {piece.low_res.endsWith(".jpg") && (
+                      <img
+                        id="imagePiece"
+                        src={piece.high_res}
+                        alt="piece fullsize"></img>
+                    )}
+                    {piece.low_res.endsWith(".mp4") && (
+                      <video
+                        id="videoPiece"
+                        alt="piece fullsize"
+                        loop
+                        muted
+                        autoPlay>
+                        <source src={piece.high_res} type="video/mp4"></source>
+                      </video>
+                    )}
+                    <div className="modal-footer pieceFooter">
+                      <p>{piece.bio}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -129,19 +136,3 @@ const Dollarbill = () => {
 };
 
 export default Dollarbill;
-
-/*
-
-        const attribute = document.getElementById("pieceRow").getAttribute("id");
-    if (attribute === "pieceRow") {
-      document.getElementById("pieceRow").setAttribute("id", "visible");
-    } else if (attribute === "visible") {
-      document.getElementById("visible").setAttribute("id", "pieceRow");
-    } 
-
-  element.style.transition = ".3s ease-in-out";
-  element.style.transform = "scale(5)";
-  let element2 = document.getElementById("body");
-  element2.style.transition = ".3s ease-in-out";
-  element2.style.backgroundColor = "rgba(0, 0, 0, 0.75)";
-*/

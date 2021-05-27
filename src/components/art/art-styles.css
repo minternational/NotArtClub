@@ -4,7 +4,7 @@
 }
 
 #content {
-  text-align: left;
+  text-align: justify;
   margin: 3rem 0 6rem 0;
 }
 
@@ -13,6 +13,8 @@
 }
 
 #dollarbill {
+  margin: auto;
+  max-width: 1450px;
   margin-top: 3rem;
 }
 
@@ -22,7 +24,6 @@
 
 #pieceRow {
   margin: auto;
-  align-items: stretch;
   /* display: none; */
 }
 
@@ -31,25 +32,22 @@
 }
 
 .piece {
-  width: 100%;
+  width: 145px;
   margin-bottom: -6px;
 }
 
 #pieceStyle {
-  width: 115px;
+  width: 145px;
 }
 
-.modal-content {
-  max-width: 1000px;
-  width: 150%;
-  margin: auto;
-  padding: 0;
-}
+/* .modal-content {
+  width: 1000px;
+} */
 
 .visible {
   margin: auto;
   align-items: stretch;
-  display: contents;
+  /* display: contents; */
 }
 
 .piece:hover {
@@ -58,13 +56,17 @@
   border-radius: 5px;
   box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.75);
 }
-.piece::after {
-  content: "";
-  transition: 500ms ease-out;
+
+#imagePiece {
+  margin: 0 -0.5px -0.5px 0;
 }
 
-.modal-title {
-  margin: auto;
+#videoPiece {
+  margin: 0 -1.5px 0 0;
+}
+
+.pieceFooter {
+  text-align: justify;
 }
 
 @media screen and (max-width: 900px) {
