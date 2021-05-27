@@ -27,7 +27,7 @@ const Artists = () => {
       <div className="container-fluid">
         {artists.map(artist => (
           <React.Fragment key={artist.id}>
-            <div className="card" style={{ width: "18rem" }}>
+            <div className="card">
               <a
                 href="_"
                 className="modalToggle"
@@ -56,7 +56,7 @@ const Artists = () => {
                 role="document">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLongTitle">
+                    <h5 className="modal-title" id="modalLongTitle">
                       {artist.name}
                     </h5>
                     <button
