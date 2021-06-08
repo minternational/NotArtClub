@@ -12,6 +12,11 @@
   margin: 3rem 0 6rem 0;
 }
 
+.youtubeVideo,
+.youtubeVideoFinalPiece {
+  margin: 3rem 0 6rem 0;
+}
+
 #dollarbill {
   margin: auto;
   max-width: 1450px;
@@ -24,7 +29,7 @@
 
 #pieceRow {
   margin: auto;
-  /* display: none; */
+  display: none;
 }
 
 .buttonReveal {
@@ -47,7 +52,7 @@
 .visible {
   margin: auto;
   align-items: stretch;
-  /* display: contents; */
+  display: contents;
 }
 
 .piece:hover {
@@ -69,8 +74,17 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   #art {
     width: 90%;
+  }
+  .youtubeVideo {
+    height: 100%;
+    padding-bottom: 6rem;
+    margin-top: 0;
+  }
+  .youtubeVideoFinalPiece {
+    height: 315px;
+    margin-bottom: 3rem;
   }
 }

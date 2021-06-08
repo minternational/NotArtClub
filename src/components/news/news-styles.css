@@ -5,13 +5,28 @@
 }
 
 #recent-news-hr {
-  margin: 3rem 0;
+  margin-top: 3rem;
+}
+
+.text_links {
+  text-decoration: underline;
 }
 
 #recent-news-img {
   width: 35%;
   float: left;
   margin: 0 2rem 1rem 0;
+}
+
+#nac_logo {
+  margin: 8rem 0 8rem 0;
+  max-width: 95%;
+}
+
+#foundation {
+  width: 560px;
+  height: 315px;
+  border: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -24,4 +39,8 @@ a:hover {
   color: black;
   font-weight: bold;
   text-decoration: none;
+}
+
+div.widgetChannelName-17sLG_ {
+  visibility: hidden;
 }

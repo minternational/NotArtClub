@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Home from "./components/home/Home";
 import Art from "./components/art/Art";
 import Artists from "./components/artists/Artists";
-import News from "./components/news/News";
+import Presskit from "./components/news/Presskit";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -15,7 +15,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/news" exact component={News} />
+          <Route path="/presskit" exact component={Presskit} />
           <Route path="/art" exact component={Art} />
           <Route path="/artists" exact component={Artists} />
         </Switch>

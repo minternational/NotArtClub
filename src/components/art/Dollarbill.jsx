@@ -33,7 +33,7 @@ const Dollarbill = () => {
     getBodyElement.style.backgroundColor = "rgba(255, 255, 255, 1)";
   };
 
-  /*   const handleClick = e => {
+  const handleClick = e => {
     const attribute = document.getElementById("pieceRow").getAttribute("id");
     if (attribute === "pieceRow") {
       document.getElementById("pieceRow").setAttribute("id", "visible");
@@ -43,13 +43,13 @@ const Dollarbill = () => {
       element.style.transition = "1s";
       return false;
     }
-  }; */
+  };
 
   return (
     <section id="dollarbill">
-      {/*       <button id="button" className="btn buttonReveal" onClick={handleClick}>
-        Discover our final piece in full glance - Click here
-      </button> */}
+      <button id="button" className="btn buttonReveal" onClick={handleClick}>
+        Discover our final piece in full glance (300MB)
+      </button>
       <div id="pieceRow" className="row">
         {dollarbill.map(piece => (
           <React.Fragment>
@@ -61,6 +61,7 @@ const Dollarbill = () => {
                   data-toggle="modal"
                   data-target={`.${piece.id}-modal-lg`}>
                   <img
+                    lazy
                     onMouseOver={scaleUp}
                     onMouseOut={scaleNormal}
                     className="piece"
@@ -76,6 +77,7 @@ const Dollarbill = () => {
                   data-toggle="modal"
                   data-target={`.${piece.id}-modal-lg`}>
                   <img
+                    lazy
                     onMouseOver={scaleUp}
                     onMouseOut={scaleNormal}
                     className="piece"
@@ -107,17 +109,19 @@ const Dollarbill = () => {
                     </div>
                     {piece.low_res.endsWith(".jpg") && (
                       <img
+                        loading="lazy"
                         id="imagePiece"
                         src={piece.high_res}
                         alt="piece fullsize"></img>
                     )}
                     {piece.low_res.endsWith(".mp4") && (
                       <video
+                        /*className="lazy"*/
                         id="videoPiece"
                         alt="piece fullsize"
                         loop
                         muted
-                        autoPlay>
+                        autoplay>
                         <source src={piece.high_res} type="video/mp4"></source>
                       </video>
                     )}

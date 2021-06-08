@@ -17,12 +17,12 @@ class Countdown extends Component {
       const then = moment(timeTillDate, timeFormat);
       const now = moment();
       const countdown = moment(then - now);
-      const days = countdown.format("D");
+      /* const days = countdown.format("D"); */
       const hours = countdown.format("HH");
       const minutes = countdown.format("mm");
       const seconds = countdown.format("ss");
 
-      this.setState({ days, hours, minutes, seconds });
+      this.setState({ /* days, */ hours, minutes, seconds });
     }, 1000);
   }
 
@@ -33,10 +33,10 @@ class Countdown extends Component {
   }
 
   render() {
-    const { days, hours, minutes, seconds } = this.state;
+    const { /* days ,*/ hours, minutes, seconds } = this.state;
 
     // Mapping the date values to radius values
-    const daysRadius = mapNumber(days, 30, 0, 0, 360);
+    /* const daysRadius = mapNumber(days, 30, 0, 0, 360); */
     const hoursRadius = mapNumber(hours, 24, 0, 0, 360);
     const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
     const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
@@ -53,13 +53,13 @@ class Countdown extends Component {
         </h1>
         <h2 className="countdownSubtitle">Reveal date June 4th 2021</h2>
         <div className="countdown-wrapper">
-          {days && (
+          {/* {days && (
             <div className="countdown-item">
               <SVGCircle radius={daysRadius} />
               {days}
               <span>days</span>
             </div>
-          )}
+          )} */}
           {hours && (
             <div className="countdown-item">
               <SVGCircle radius={hoursRadius} />

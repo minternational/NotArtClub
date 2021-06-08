@@ -101,7 +101,7 @@ h6 {
   overflow-y: scroll;
 }
 
-@keyframes page {
+/* @keyframes page {
   from {
     opacity: 0;
     background-color: #000;
@@ -109,7 +109,7 @@ h6 {
   to {
     opacity: 1;
   }
-}
+} */
 
 @media screen and (max-width: 992px) {
   h1 {
