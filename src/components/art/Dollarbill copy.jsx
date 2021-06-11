@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import firebase from "../firebase";
-import spinner from "../../images/spinner.gif";
 import "../../styles/general-styles.css";
 import "./art-styles.css";
 
@@ -50,8 +49,8 @@ const Dollarbill = () => {
     <section id="dollarbill">
       <div id="pieceRow" className="row">
         {dollarbill.map(piece => (
-          <React.Fragment key={piece.id}>
-            <div id="pieceStyle">
+          <React.Fragment>
+            <div key={piece.id} id="pieceStyle">
               {piece.low_res.endsWith(".jpg") && (
                 <a
                   href="_"
@@ -59,6 +58,7 @@ const Dollarbill = () => {
                   data-toggle="modal"
                   data-target={`.${piece.id}-modal-lg`}>
                   <img
+                    lazy
                     onMouseOver={scaleUp}
                     onMouseOut={scaleNormal}
                     className="piece"
@@ -74,7 +74,7 @@ const Dollarbill = () => {
                   data-toggle="modal"
                   data-target={`.${piece.id}-modal-lg`}>
                   <img
-                    onLoading={spinner}
+                    lazy
                     onMouseOver={scaleUp}
                     onMouseOut={scaleNormal}
                     className="piece"
@@ -94,7 +94,7 @@ const Dollarbill = () => {
                   <div className="modal-content">
                     <div className="modal-header">
                       <h5 className="modal-title" id="modalLongTitle">
-                        {piece.name}
+                        {piece.id}
                       </h5>
                       <button
                         type="button"
@@ -106,25 +106,22 @@ const Dollarbill = () => {
                     </div>
                     {piece.low_res.endsWith(".jpg") && (
                       <img
-                        loading="lazy"
                         id="imagePiece"
                         src={piece.high_res}
                         alt="piece fullsize"></img>
                     )}
                     {piece.low_res.endsWith(".mp4") && (
                       <video
-                        preload="none"
                         id="videoPiece"
                         alt="piece fullsize"
-                        autoPlay
-                        controls
+                        loop
                         muted
-                        loop>
+                        autoplay>
                         <source src={piece.high_res} type="video/mp4"></source>
                       </video>
                     )}
                     <div className="modal-footer pieceFooter">
-                      <p>{piece.text}</p>
+                      <p>{piece.bio}</p>
                     </div>
                   </div>
                 </div>

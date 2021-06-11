@@ -47,6 +47,13 @@ const Navigation = () => {
             <Link className="react-link" to="/artists">
               <li className="nav-item nav-link">The Artists</li>
             </Link>
+            <a
+              className="react-link"
+              href="https://foundation.app/@NotArtClub"
+              target="_blank"
+              rel="noopener noreferrer">
+              <li className="nav-item nav-link">Foundation</li>
+            </a>
             <Link className="react-link" to="/presskit">
               <li className="nav-item nav-link">Press Kit</li>
             </Link>
