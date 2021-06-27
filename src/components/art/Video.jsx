@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Video = () => {
   return (
@@ -13,6 +14,14 @@ const Video = () => {
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen></iframe>
+      <Link className="react-link" to="/dollarbill">
+        <button id="button" className="btn buttonReveal">
+          DISCOVER OUR FINAL PIECE IN FULL GLANCE ON OUR INTERACTIVE GALLERY!{" "}
+          <br />
+          Notice: This gallery is about <u>1GB</u> big! Use it{" "}
+          <u>only with WiFi!</u> Loading times vary!
+        </button>
+      </Link>
       <div className="row">
         <div className="col-lg-4 col-12">
           <h4>“The Last Bell" - Teaser 3</h4>

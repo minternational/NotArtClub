@@ -115,4 +115,7 @@ h6 {
   h1 {
     font-size: 3rem;
   }
+  .recent-news-paragraph {
+    width: 100%;
+  }
 }

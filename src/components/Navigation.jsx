@@ -24,6 +24,9 @@ const Navigation = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
+            <Link className="react-link" to="/news">
+              <li className="nav-item nav-link">News</li>
+            </Link>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -45,7 +48,7 @@ const Navigation = () => {
               </Link>
             </li>
             <Link className="react-link" to="/artists">
-              <li className="nav-item nav-link">The Artists</li>
+              <li className="nav-item nav-link">Artists</li>
             </Link>
             <a
               className="react-link"
@@ -53,6 +56,13 @@ const Navigation = () => {
               target="_blank"
               rel="noopener noreferrer">
               <li className="nav-item nav-link">Foundation</li>
+            </a>
+            <a
+              className="react-link"
+              href="https://discord.com/invite/cXvjc2qJyj"
+              target="_blank"
+              rel="noopener noreferrer">
+              <li className="nav-item nav-link">Discord</li>
             </a>
             <Link className="react-link" to="/presskit">
               <li className="nav-item nav-link">Press Kit</li>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import firebase from "../firebase";
-import spinner from "../../images/spinner.gif";
+import logo from "../../images/logo.png";
 import "../../styles/general-styles.css";
 import "./art-styles.css";
 
@@ -48,6 +48,10 @@ const Dollarbill = () => {
 
   return (
     <section id="dollarbill">
+      <h1 className="interactive_header">
+        The <img className="nac_logo" src={logo} alt="nac logo"></img>{" "}
+        interactive gallery.
+      </h1>
       <div id="pieceRow" className="row">
         {dollarbill.map(piece => (
           <React.Fragment key={piece.id}>
@@ -74,7 +78,6 @@ const Dollarbill = () => {
                   data-toggle="modal"
                   data-target={`.${piece.id}-modal-lg`}>
                   <img
-                    onLoading={spinner}
                     onMouseOver={scaleUp}
                     onMouseOut={scaleNormal}
                     className="piece"
@@ -90,7 +93,7 @@ const Dollarbill = () => {
                 role="dialog"
                 aria-labelledby="largeModalLabel"
                 aria-hidden="true">
-                <div className="modal-dialog modal-lg">
+                <div className="modal-dialog modal-dialog-centered modal-lg ">
                   <div className="modal-content">
                     <div className="modal-header">
                       <h5 className="modal-title" id="modalLongTitle">

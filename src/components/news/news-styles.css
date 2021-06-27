@@ -8,6 +8,10 @@
   margin-top: 3rem;
 }
 
+.recent-news-paragraph {
+  width: 75%;
+}
+
 .text_links {
   text-decoration: underline;
 }
@@ -29,6 +33,12 @@
   border: none;
 }
 
+#youtubeSubtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
 @media screen and (max-width: 900px) {
   #news-section {
     width: 90%;
@@ -43,4 +53,10 @@ a:hover {
 
 div.widgetChannelName-17sLG_ {
   visibility: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .recent-news-paragraph {
+    width: 100%;
+  }
 }

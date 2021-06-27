@@ -143,18 +143,21 @@ const Footer = () => {
         {/* SITE MAP & LEGAL */}
         <div className="footer-row col-lg-4 col-md-6 col-sm-12">
           <h6 id="site-map">Site Map & Legal</h6>
+          <Link className="footer-link" to="/news">
+            <li>News</li>
+          </Link>
           <Link className="footer-link" to="/art">
             <li>The Project</li>
           </Link>
           <Link className="footer-link" to="/artists">
-            <li>The Artists</li>
+            <li>Artists</li>
           </Link>
           <Link className="footer-link" to="/presskit">
             <li>Press Kit</li>
           </Link>
-          <Link className="footer-link" to="/dollarbill">
+          {/* <Link className="footer-link" to="/dollarbill">
             <li>Gallery</li>
-          </Link>
+          </Link> */}
           <li
             className="footer-link"
             data-toggle="modal"

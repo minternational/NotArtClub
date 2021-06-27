@@ -47,6 +47,16 @@
   max-width: 140px;
 }
 
+.interactive_header {
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+.nac_logo {
+  height: 7rem;
+  margin-top: -1rem;
+}
+
 /* .modal-content {
   width: 1000px;
 } */

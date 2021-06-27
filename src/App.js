@@ -4,6 +4,7 @@ import Home from "./components/home/Home";
 import Art from "./components/art/Art";
 import Artists from "./components/artists/Artists";
 import Presskit from "./components/news/Presskit";
+import News from "./components/news/News";
 import Dollarbill from "./components/art/Dollarbill";
 import Footer from "./components/Footer";
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/artists" exact component={Artists} />
           <Route path="/presskit" exact component={Presskit} />
           <Route path="/dollarbill" exact component={Dollarbill} />
+          <Route path="/news" exact component={News} />
         </Switch>
         <Footer />
       </Router>

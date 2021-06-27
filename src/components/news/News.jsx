@@ -23,16 +23,7 @@ const News = () => {
   return (
     <section id="news-section">
       <div className="container-fluid">
-        <iframe
-          title="discord"
-          src="https://discord.com/widget?id=826825619991691314&theme=light"
-          width="500"
-          height="500"
-          allowtransparency="true"
-          frameborder="0"
-          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-
-        <h2>Recent News</h2>
+        <h2>News & Articles</h2>
         <hr id="recent-news-hr" />
         <React.Fragment>
           {news.map(entry => (
