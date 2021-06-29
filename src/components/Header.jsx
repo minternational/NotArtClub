@@ -1,10 +1,10 @@
 import React from "react";
-import header1 from "../images/placeholder_carousel.jpg";
+import header1 from "../images/placeholder_carousel.webp";
 import "../styles/general-styles.css";
 import "./main-styles.css";
-import header2 from "../images/placeholder_carousel2.jpg";
-import header3 from "../images/placeholder_carousel3.jpg";
-import header4 from "../images/placeholder_carousel4.jpg";
+import header2 from "../images/placeholder_carousel2.webp";
+import header3 from "../images/placeholder_carousel3.webp";
+import header4 from "../images/placeholder_carousel4.webp";
 
 const Header = () => {
   return (

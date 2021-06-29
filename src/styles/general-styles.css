@@ -19,10 +19,10 @@ body {
   text-align: center;
   margin: auto;
   color: black;
-  animation: 1.5s;
+  /*   animation: 1.5s;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
-  animation-name: page;
+  animation-name: page; */
 }
 
 h1 {
@@ -112,8 +112,14 @@ h6 {
 } */
 
 @media screen and (max-width: 992px) {
+  body {
+    width: 100%;
+  }
   h1 {
     font-size: 3rem;
+  }
+  p {
+    text-align: center !important;
   }
   .recent-news-paragraph {
     width: 100%;

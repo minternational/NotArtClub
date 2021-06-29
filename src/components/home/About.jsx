@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/general-styles.css";
 import "./home-styles.css";
-import aboutImage from "../../images/mosaic.jpg";
+import aboutImage from "../../images/mosaic.webp";
 
 const About = () => {
   return (

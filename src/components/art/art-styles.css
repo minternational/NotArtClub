@@ -19,7 +19,7 @@
 
 #dollarbill {
   margin: auto;
-  width: 1370px;
+  width: 1205px;
   margin-top: 3rem;
 }
 
@@ -37,15 +37,15 @@
 }
 
 .piece {
-  max-width: 140px;
+  max-width: 123px;
   width: 100%;
   margin-bottom: -6px;
   background-image: url(../../images/spinner.gif);
 }
 
-#pieceStyle {
-  max-width: 140px;
-}
+/* #pieceStyle {
+  max-width: 136px;
+} */
 
 .interactive_header {
   text-align: center;
@@ -98,6 +98,12 @@
   .youtubeVideoFinalPiece {
     height: 315px;
     margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .buttonReveal {
+    display: none;
   }
 }
 

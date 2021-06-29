@@ -7,16 +7,6 @@ const News = () => {
   return (
     <section id="news-section">
       <div className="row">
-        {/*         <div className="col-lg-6 col-12">
-          <iframe
-            title="discord"
-            src="https://discord.com/widget?id=826825619991691314&theme=light"
-            width="100%"
-            height="500"
-            allowtransparency="true"
-            frameBorder="0"
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div> */}
         <div className="col-12">
           <h2>Press Kit</h2>
           <hr id="recent-news-hr" />
@@ -41,9 +31,9 @@ const News = () => {
                 about world currency in history.
                 <br />
                 <br />
-                Their goal? To transform this notorious symbol of wealth into
-                100 Ethereum. Their reserve price? While writing this equals
-                $284,600 in USD.
+                Their goal? To transform this notorious symbol of archaic
+                monetary system into 100 Ethereum. Their reserve price? While
+                writing this equals $284,600 in USD.
                 <br />
                 <br />
                 The auction will take place 4 weeks following the reserve price
@@ -101,8 +91,8 @@ const News = () => {
                   </li>
                   <br />
                   <li>
-                    • Final product ( US $100 bill as a symbol of wealth, to be
-                    burned and reflected upon){" "}
+                    • Final product ( US $100 bill as a symbol of an obsolete
+                    currency, to be burned and reflected upon){" "}
                   </li>
                   <br />
                   <li>
@@ -147,7 +137,7 @@ const News = () => {
               </div>
             </div>
             <hr id="recent-news-hr" />
-            <h2>Online Interviews</h2>
+            <h2>Visuals</h2>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <br />
@@ -162,7 +152,6 @@ const News = () => {
                   allowFullScreen></iframe>
                 <p id="youtubeSubtitle">Kenn Bosak Podast Interview</p>
               </div>
-
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <br />
                 <br />
@@ -174,7 +163,20 @@ const News = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen></iframe>
-                <p id="youtubeSubtitle">"The Last Bell Swing"</p>
+                <p id="youtubeSubtitle">"The Last Bell Swing" #1</p>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <br />
+                <br />
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/ljhb3AYRIoY"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen></iframe>
+                <p id="youtubeSubtitle">"The Last Bell Swing" #2</p>
               </div>
             </div>
           </React.Fragment>
