@@ -178,6 +178,19 @@ const News = () => {
                   allowFullScreen></iframe>
                 <p id="youtubeSubtitle">"The Last Bell Swing" #2</p>
               </div>
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <br />
+                <br />
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/CXxsnFMBV8Y"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen></iframe>
+                <p id="youtubeSubtitle">DJ BlakeHotz introduce NAC</p>
+              </div>
             </div>
           </React.Fragment>
         </div>

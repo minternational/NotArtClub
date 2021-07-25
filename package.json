@@ -2,7 +2,7 @@
   "name": "not-art-club",
   "version": "1.0.5",
   "private": true,
-  "homepage": "https://www.notart.club",
+  "homepage": "https://www.crmk.de/nac/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
